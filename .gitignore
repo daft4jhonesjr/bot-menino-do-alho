@@ -1,0 +1,6 @@
+node_modules/
+.wwebjs_cache/
+temp/
+*.log
+.DS_Store
+.env

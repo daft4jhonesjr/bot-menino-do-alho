@@ -1,0 +1,5433 @@
+{
+  "boletos": [
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "360,00",
+      "vencimento": "09/01/2026",
+      "nf": "12243",
+      "dataProcessamento": "2026-01-09",
+      "pago": false,
+      "ficheiro": "2026-01-09_COMERCIAL_PATY_IMPORTAÇÃO_LTDA_NF12243.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "875,00",
+      "vencimento": "14/01/2026",
+      "nf": "12263",
+      "dataProcessamento": "2026-01-14",
+      "pago": false,
+      "ficheiro": "2026-01-14_COMERCIAL_PATY_IMPORTAÇÃO_LTDA_NF12263.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "720,00",
+      "vencimento": "19/01/2026",
+      "nf": "12244",
+      "dataProcessamento": "2026-01-19",
+      "pago": false,
+      "ficheiro": "2026-01-19_COMERCIAL_PATY_IMPORTAÇÃO_LTDA_NF12244.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "540,00",
+      "vencimento": "19/01/2026",
+      "nf": "12261",
+      "dataProcessamento": "2026-01-19",
+      "pago": false,
+      "ficheiro": "2026-01-19_COMERCIAL_PATY_IMPORTAÇÃO_LTDA_NF12261.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "875,00",
+      "vencimento": "19/01/2026",
+      "nf": "12285",
+      "dataProcessamento": "2026-01-19",
+      "pago": false,
+      "ficheiro": "2026-01-19_COMERCIAL_PATY_IMPORTAÇÃO_LTDA_NF12285.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "2.400,00",
+      "vencimento": "26/01/2026",
+      "nf": "12253",
+      "dataProcessamento": "2026-01-26",
+      "pago": false,
+      "ficheiro": "2026-01-26_COMERCIAL_PATY_IMPORTAÇÃO_LTDA_NF12253.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "720,00",
+      "vencimento": "26/01/2026",
+      "nf": "12262",
+      "dataProcessamento": "2026-01-26",
+      "pago": false,
+      "ficheiro": "2026-01-26_COMERCIAL_PATY_IMPORTAÇÃO_LTDA_NF12262.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "800,00",
+      "vencimento": "28/01/2026",
+      "nf": "12286",
+      "dataProcessamento": "2026-01-28",
+      "pago": false,
+      "ficheiro": "2026-01-28_COMERCIAL_PATY_IMPORTAÇÃO_LTDA_NF12286.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "1.600,00",
+      "vencimento": "04/02/2026",
+      "nf": "12248",
+      "dataProcessamento": "2026-02-04",
+      "pago": false,
+      "ficheiro": "2026-02-04_COMERCIAL_PATY_IMPORTAÇÃO_LTDA_NF12248.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "1.600,00",
+      "vencimento": "04/02/2026",
+      "nf": "12249",
+      "dataProcessamento": "2026-02-04",
+      "pago": false,
+      "ficheiro": "2026-02-04_COMERCIAL_PATY_IMPORTAÇÃO_LTDA_NF12249.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "6.400,00",
+      "vencimento": "09/02/2026",
+      "nf": "12267",
+      "dataProcessamento": "2026-02-09",
+      "pago": false,
+      "ficheiro": "2026-02-09_COMERCIAL_PATY_IMPORTAÇÃO_LTDA_NF12267.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "1.600,00",
+      "vencimento": "11/02/2026",
+      "nf": "12277",
+      "dataProcessamento": "2026-02-11",
+      "pago": false,
+      "ficheiro": "2026-02-11_COMERCIAL_PATY_IMPORTAÇÃO_LTDA_NF12277.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "1.600,00",
+      "vencimento": "11/02/2026",
+      "nf": "12278",
+      "dataProcessamento": "2026-02-11",
+      "pago": false,
+      "ficheiro": "2026-02-11_COMERCIAL_PATY_IMPORTAÇÃO_LTDA_NF12278.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "1.600,00",
+      "vencimento": "13/02/2026",
+      "nf": "12292",
+      "dataProcessamento": "2026-02-13",
+      "pago": false,
+      "ficheiro": "2026-02-13_COMERCIAL_PATY_IMPORTAÇÃO_LTDA_NF12292.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "4.800,00",
+      "vencimento": "16/02/2026",
+      "nf": "12298",
+      "dataProcessamento": "2026-02-16",
+      "pago": false,
+      "ficheiro": "2026-02-16_COMERCIAL_PATY_IMPORTAÇÃO_LTDA_NF12298.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "2.400,00",
+      "vencimento": "16/02/2026",
+      "nf": "12299",
+      "dataProcessamento": "2026-02-16",
+      "pago": false,
+      "ficheiro": "2026-02-16_COMERCIAL_PATY_IMPORTAÇÃO_LTDA_NF12299.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "1.600,00",
+      "vencimento": "23/02/2026",
+      "nf": "12368",
+      "dataProcessamento": "2026-02-23",
+      "pago": false,
+      "ficheiro": "2026-02-23_COMERCIAL_PATY_IMPORTAÇÃO_LTDA_NF12368.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "Não identificado",
+      "pagador": "Não identificado",
+      "valor": "10,00",
+      "vencimento": "24/02/2026",
+      "nf": "SN",
+      "dataProcessamento": "2026-02-24",
+      "pago": false,
+      "ficheiro": "2026-02-24_Não_identificado_NFSN.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "Não identificado",
+      "pagador": "Valdeci Freire de Almeida",
+      "valor": "1.500,00",
+      "vencimento": "25/02/2026",
+      "nf": "SN",
+      "dataProcessamento": "2026-02-25",
+      "pago": false,
+      "ficheiro": "2026-02-25_Não_identificado_NFSN.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "6.400,00",
+      "vencimento": "26/02/2026",
+      "nf": "12341",
+      "dataProcessamento": "2026-02-26",
+      "pago": false,
+      "ficheiro": "2026-02-26_COMERCIAL_PATY_IMPORTAÇÃO_LTDA_NF12341.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "Não identificado",
+      "pagador": "Comprovante BB",
+      "valor": "1.300,00",
+      "vencimento": "27/02/2026",
+      "nf": "SN",
+      "dataProcessamento": "2026-02-27",
+      "pago": false,
+      "ficheiro": "2026-02-27_Não_identificado_NFSN.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "DESTAK EMBALAGENS EIRELI",
+      "pagador": "FRUTOS DA TERRA MINI. LTDA-ME",
+      "valor": "925,00",
+      "vencimento": "01/03/2026",
+      "nf": "3996",
+      "dataProcessamento": "2026-03-01",
+      "pago": false,
+      "ficheiro": "2026-03-01_DESTAK_EMBALAGENS_EIRELI_NF3996.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "540,00",
+      "vencimento": "02/03/2026",
+      "nf": "12394",
+      "dataProcessamento": "2026-03-02",
+      "pago": false,
+      "ficheiro": "2026-03-02_COMERCIAL_PATY_IMPORTAÇÃO_LTDA_NF12394.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "940,50",
+      "vencimento": "10/03/2026",
+      "nf": "12444",
+      "dataProcessamento": "2026-03-10",
+      "pago": false,
+      "ficheiro": "2026-03-10_COMERCIAL_PATY_IMPORTAÇÃO_LTDA_NF12444.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "1.600,00",
+      "vencimento": "12/03/2026",
+      "nf": "12400",
+      "dataProcessamento": "2026-03-12",
+      "pago": false,
+      "ficheiro": "2026-03-12_COMERCIAL_PATY_IMPORTAÇÃO_LTDA_NF12400.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "1.600,00",
+      "vencimento": "16/03/2026",
+      "nf": "12391",
+      "dataProcessamento": "2026-03-16",
+      "pago": false,
+      "ficheiro": "2026-03-16_COMERCIAL_PATY_IMPORTAÇÃO_LTDA_NF12391.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "2.400,00",
+      "vencimento": "16/03/2026",
+      "nf": "12415",
+      "dataProcessamento": "2026-03-16",
+      "pago": false,
+      "ficheiro": "2026-03-16_COMERCIAL_PATY_IMPORTAÇÃO_LTDA_NF12415.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "480,00",
+      "vencimento": "16/03/2026",
+      "nf": "12437",
+      "dataProcessamento": "2026-03-16",
+      "pago": false,
+      "ficheiro": "2026-03-16_COMERCIAL_PATY_IMPORTAÇÃO_LTDA_NF12437.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "640,00",
+      "vencimento": "16/03/2026",
+      "nf": "12438",
+      "dataProcessamento": "2026-03-16",
+      "pago": false,
+      "ficheiro": "2026-03-16_COMERCIAL_PATY_IMPORTAÇÃO_LTDA_NF12438.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "1.600,00",
+      "vencimento": "19/03/2026",
+      "nf": "12439",
+      "dataProcessamento": "2026-03-19",
+      "pago": false,
+      "ficheiro": "2026-03-19_COMERCIAL_PATY_IMPORTAÇÃO_LTDA_NF12439.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "DESTAK EMBALAGENS EIRELI",
+      "pagador": "SUPERMERCADO REGENTE LTDA",
+      "valor": "740,00",
+      "vencimento": "22/03/2026",
+      "nf": "3975",
+      "dataProcessamento": "2026-03-22",
+      "pago": false,
+      "ficheiro": "2026-03-22_DESTAK_EMBALAGENS_EIRELI_NF3975.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "DESTAK EMBALAGENS EIRELI",
+      "pagador": "SUPERMERCADO REGENTE LTDA",
+      "valor": "370,00",
+      "vencimento": "22/03/2026",
+      "nf": "3976",
+      "dataProcessamento": "2026-03-22",
+      "pago": false,
+      "ficheiro": "2026-03-22_DESTAK_EMBALAGENS_EIRELI_NF3976.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "2.400,00",
+      "vencimento": "23/03/2026",
+      "nf": "12445",
+      "dataProcessamento": "2026-03-23",
+      "pago": false,
+      "ficheiro": "2026-03-23_COMERCIAL_PATY_IMPORTAÇÃO_LTDA_NF12445.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "DESTAK EMBALAGEM LTDA",
+      "pagador": "JNS COMERCIO DE PRODUTOS ALIME",
+      "valor": "2.400,00",
+      "vencimento": "23/03/2026",
+      "nf": "43976",
+      "dataProcessamento": "2026-03-23",
+      "pago": false,
+      "ficheiro": "2026-03-23_DESTAK_EMBALAGEM_LTDA_NF43976.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "1.600,00",
+      "vencimento": "25/03/2026",
+      "nf": "12412",
+      "dataProcessamento": "2026-03-25",
+      "pago": false,
+      "ficheiro": "2026-03-25_COMERCIAL_PATY_IMPORTAÇÃO_LTDA_NF12412.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "1.600,00",
+      "vencimento": "25/03/2026",
+      "nf": "12413",
+      "dataProcessamento": "2026-03-25",
+      "pago": false,
+      "ficheiro": "2026-03-25_COMERCIAL_PATY_IMPORTAÇÃO_LTDA_NF12413.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "1.600,00",
+      "vencimento": "25/03/2026",
+      "nf": "12414",
+      "dataProcessamento": "2026-03-25",
+      "pago": false,
+      "ficheiro": "2026-03-25_COMERCIAL_PATY_IMPORTAÇÃO_LTDA_NF12414.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "6.400,00",
+      "vencimento": "27/03/2026",
+      "nf": "12426",
+      "dataProcessamento": "2026-03-27",
+      "pago": false,
+      "ficheiro": "2026-03-27_COMERCIAL_PATY_IMPORTAÇÃO_LTDA_NF12426.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "2.250,00",
+      "vencimento": "02/04/2026",
+      "nf": "12443",
+      "dataProcessamento": "2026-04-02",
+      "pago": false,
+      "ficheiro": "2026-04-02_COMERCIAL_PATY_IMPORTAÇÃO_LTDA_NF12443.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "DESTAK EMBALAGENS EIRELI",
+      "pagador": "SB SUPERMERCADO LTDA ME",
+      "valor": "1.725,00",
+      "vencimento": "03/04/2026",
+      "nf": "4157",
+      "dataProcessamento": "2026-04-03",
+      "pago": false,
+      "ficheiro": "2026-04-03_DESTAK_EMBALAGENS_EIRELI_NF4157.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "1.600,00",
+      "vencimento": "06/04/2026",
+      "nf": "12446",
+      "dataProcessamento": "2026-04-06",
+      "pago": false,
+      "ficheiro": "2026-04-06_COMERCIAL_PATY_IMPORTAÇÃO_LTDA_NF12446.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "1.600,00",
+      "vencimento": "06/04/2026",
+      "nf": "12447",
+      "dataProcessamento": "2026-04-06",
+      "pago": false,
+      "ficheiro": "2026-04-06_COMERCIAL_PATY_IMPORTAÇÃO_LTDA_NF12447.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "1.600,00",
+      "vencimento": "06/04/2026",
+      "nf": "12450",
+      "dataProcessamento": "2026-04-06",
+      "pago": false,
+      "ficheiro": "2026-04-06_COMERCIAL_PATY_IMPORTAÇÃO_LTDA_NF12450.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "540,00",
+      "vencimento": "26/01/2026",
+      "nf": "12303",
+      "dataProcessamento": "2026-03-06",
+      "pago": false,
+      "ficheiro": "NF - 12303 - 01 - SUPERMERCADO REGENTE LTDA FINAL 00 (PETROLINA PE).pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "875,00",
+      "vencimento": "21/01/2026",
+      "nf": "12305",
+      "dataProcessamento": "2026-03-06",
+      "pago": false,
+      "ficheiro": "NF - 12305 - 01 - FRUTOS DA TERRA MINIMERCADO LTDA(PETROLINA PE).pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "1.600,00",
+      "vencimento": "23/02/2026",
+      "nf": "12333",
+      "dataProcessamento": "2026-03-06",
+      "pago": false,
+      "ficheiro": "NF - 12333 - 01 - S N SOARES E CIA LTDA (PETROLINA PE).pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "2.400,00",
+      "vencimento": "16/02/2026",
+      "nf": "12340",
+      "dataProcessamento": "2026-03-06",
+      "pago": false,
+      "ficheiro": "NF - 12340  - 01 - SB SUPERMERCADOS LTDA(PETROLINA PE).pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "1.600,00",
+      "vencimento": "02/03/2026",
+      "nf": "12355",
+      "dataProcessamento": "2026-03-06",
+      "pago": false,
+      "ficheiro": "NF - 12355 - 01 - JN COMERCIO DE PRODUTOS ALIMENTICIOS LTDA(PETROLINA PE).pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "DESTAK EMBALAGENS EIRELI",
+      "pagador": "MERCADINHO ECONOMICO",
+      "valor": "1.600,00",
+      "vencimento": "04/03/2026",
+      "nf": "3774",
+      "dataProcessamento": "2026-03-06",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "DESTAK EMBALAGENS EIRELI",
+      "pagador": "VITORIA ATACADAO LTDA",
+      "valor": "6.000,00",
+      "vencimento": "02/03/2026",
+      "nf": "3700",
+      "dataProcessamento": "2026-03-06",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "DESTAK EMBALAGENS EIRELI",
+      "pagador": "FRUTOS DA TERRA MINI. LTDA-ME",
+      "valor": "925,00",
+      "vencimento": "10/02/2026",
+      "nf": "3733",
+      "dataProcessamento": "2026-03-06",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "Não identificado",
+      "pagador": "Não identificado",
+      "valor": "400,00",
+      "vencimento": "08/03/2026",
+      "nf": "SN",
+      "dataProcessamento": "2026-03-08",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "DESTAK EMBALAGEM LTDA",
+      "pagador": "CAPIM FRIOS EIRELI",
+      "valor": "825,00",
+      "vencimento": "29/03/2026",
+      "nf": "44630",
+      "dataProcessamento": "2026-03-09",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "DESTAK EMBALAGEM LTDA",
+      "pagador": "CAPIM FRIOS LTDA",
+      "valor": "825,00",
+      "vencimento": "29/03/2026",
+      "nf": "44631",
+      "dataProcessamento": "2026-03-09",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "640,00",
+      "vencimento": "24/03/2026",
+      "nf": "12452",
+      "dataProcessamento": "2026-03-09",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "DESTAK EMBALAGEM LTDA",
+      "pagador": "CAPIM FRIOS EIRELI ME",
+      "valor": "825,00",
+      "vencimento": "29/03/2026",
+      "nf": "44632",
+      "dataProcessamento": "2026-03-09",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "DESTAK EMBALAGEM LTDA",
+      "pagador": "CAPIM FRIOS EIRELI",
+      "valor": "825,00",
+      "vencimento": "29/03/2026",
+      "nf": "44633",
+      "dataProcessamento": "2026-03-09",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "480,00",
+      "vencimento": "24/03/2026",
+      "nf": "12453",
+      "dataProcessamento": "2026-03-09",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "DESTAK EMBALAGEM LTDA",
+      "pagador": "CAPIM FRIOS LTDA",
+      "valor": "900,00",
+      "vencimento": "29/03/2026",
+      "nf": "44634",
+      "dataProcessamento": "2026-03-09",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "6.400,00",
+      "vencimento": "08/04/2026",
+      "nf": "12456",
+      "dataProcessamento": "2026-03-09",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "1.600,00",
+      "vencimento": "30/03/2026",
+      "nf": "12457",
+      "dataProcessamento": "2026-03-09",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "800,00",
+      "vencimento": "16/03/2026",
+      "nf": "12458",
+      "dataProcessamento": "2026-03-09",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "R$ 104,90 - W-800Mbps",
+      "pagador": "Joao Victor Nobrega Assuncao - 114.306.114-48",
+      "valor": "104,90",
+      "vencimento": "02/02/2026",
+      "nf": "SN",
+      "dataProcessamento": "2026-03-10",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "R$ 14,99 - W-800Mbps",
+      "pagador": "Joao Victor Nobrega Assuncao - 114.306.114-48",
+      "valor": "14,99",
+      "vencimento": "04/03/2026",
+      "nf": "SN",
+      "dataProcessamento": "2026-03-10",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "Não identificado",
+      "pagador": "Não identificado",
+      "valor": "1.980,00",
+      "vencimento": "10/03/2026",
+      "nf": "SN",
+      "dataProcessamento": "2026-03-10",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "R DA POLONIA, 92  AREIA BRANCA - PETROLINA - PE CEP:56330190",
+      "pagador": "Não identificado",
+      "valor": "36,00",
+      "vencimento": "17/12/2025",
+      "nf": "7418",
+      "dataProcessamento": "2026-03-10",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "RUA DR JULIO DE MELO, 538 B  CENTRO - PETROLINA - PE CEP:56302150",
+      "pagador": "Não identificado",
+      "valor": "7,20",
+      "vencimento": "22/12/2025",
+      "nf": "7464",
+      "dataProcessamento": "2026-03-10",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "AV SOUZA FILHO, 681 A  CENTRO - PETROLINA - PE CEP:56304001",
+      "pagador": "Não identificado",
+      "valor": "16,00",
+      "vencimento": "15/12/2025",
+      "nf": "7402",
+      "dataProcessamento": "2026-03-10",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "AV DAS NACOES, 225  CENTRO - PETROLINA - PE CEP:56304360",
+      "pagador": "Não identificado",
+      "valor": "12,00",
+      "vencimento": "24/11/2025",
+      "nf": "7328",
+      "dataProcessamento": "2026-03-11",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "R SAO VICENTE DE PAULA, 219  ATRAS DA BANCA - PETROLINA - PE CEP:56308050",
+      "pagador": "Não identificado",
+      "valor": "35,00",
+      "vencimento": "14/01/2026",
+      "nf": "12202",
+      "dataProcessamento": "2026-03-11",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "RUA DR JULIO DE MELO, 538 B  CENTRO - PETROLINA - PE CEP:56302150",
+      "pagador": "Não identificado",
+      "valor": "16,50",
+      "vencimento": "29/12/2025",
+      "nf": "7478",
+      "dataProcessamento": "2026-03-11",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "AV DAS NACOES, 225  CENTRO - PETROLINA - PE CEP:56304360",
+      "pagador": "Não identificado",
+      "valor": "7,20",
+      "vencimento": "29/12/2025",
+      "nf": "7475",
+      "dataProcessamento": "2026-03-11",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "AVENIDA NILO COELHO, 852  JARDIM MARAVILHA - PETROLINA - PE CEP:56306000",
+      "pagador": "Não identificado",
+      "valor": "8,40",
+      "vencimento": "21/11/2025",
+      "nf": "7359",
+      "dataProcessamento": "2026-03-11",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "R PILAO ARCADO, 335  JARDIM MARAVILHA - PETROLINA - PE CEP:56306680",
+      "pagador": "Não identificado",
+      "valor": "34,00",
+      "vencimento": "17/12/2025",
+      "nf": "7386",
+      "dataProcessamento": "2026-03-11",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "Não identificado",
+      "valor": "1.000,00",
+      "vencimento": "06/11/2025",
+      "nf": "7311",
+      "dataProcessamento": "2026-03-11",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "Não identificado",
+      "valor": "800,00",
+      "vencimento": "16/03/2026",
+      "nf": "12458",
+      "dataProcessamento": "2026-03-11",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "Não identificado",
+      "valor": "1.800,00",
+      "vencimento": "17/12/2025",
+      "nf": "7418",
+      "dataProcessamento": "2026-03-11",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "DESTAK EMBALAGEM LTDA",
+      "pagador": "JNS COMERCIO DE PRODUTOS ALIME",
+      "valor": "2.400,00",
+      "vencimento": "09/04/2026",
+      "nf": "44646",
+      "dataProcessamento": "2026-03-11",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "1.000,00",
+      "vencimento": "06/11/2025",
+      "nf": "7311",
+      "dataProcessamento": "2025-11-06",
+      "pago": false,
+      "ficheiro": "2025-11-06_COMERCIAL_PATY_IMPORTACAO_LTDA_NF7311.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "420,00",
+      "vencimento": "21/11/2025",
+      "nf": "7359",
+      "dataProcessamento": "2025-11-21",
+      "pago": false,
+      "ficheiro": "2025-11-21_AVENIDA_NILO_COELHO,_852_JARDIM_MARAVILHA_-_PETROLINA_-_PE_CEP56306000_NF7359.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "600,00",
+      "vencimento": "24/11/2025",
+      "nf": "7328",
+      "dataProcessamento": "2025-11-24",
+      "pago": false,
+      "ficheiro": "2025-11-24_AV_DAS_NACOES,_225_CENTRO_-_PETROLINA_-_PE_CEP56304360_NF7328.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "800,00",
+      "vencimento": "15/12/2025",
+      "nf": "7402",
+      "dataProcessamento": "2025-12-15",
+      "pago": false,
+      "ficheiro": "2025-12-15_AV_SOUZA_FILHO,_681_A_CENTRO_-_PETROLINA_-_PE_CEP56304001_NF7402.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "1.800,00",
+      "vencimento": "17/12/2025",
+      "nf": "7418",
+      "dataProcessamento": "2025-12-17",
+      "pago": false,
+      "ficheiro": "2025-12-17_COMERCIAL_PATY_IMPORTACAO_LTDA_NF7418.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "1.700,00",
+      "vencimento": "17/12/2025",
+      "nf": "7386",
+      "dataProcessamento": "2025-12-17",
+      "pago": false,
+      "ficheiro": "2025-12-17_R_PILAO_ARCADO,_335_JARDIM_MARAVILHA_-_PETROLINA_-_PE_CEP56306680_NF7386.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "360,00",
+      "vencimento": "22/12/2025",
+      "nf": "7464",
+      "dataProcessamento": "2025-12-22",
+      "pago": false,
+      "ficheiro": "2025-12-22_RUA_DR_JULIO_DE_MELO,_538_B_CENTRO_-_PETROLINA_-_PE_CEP56302150_NF7464.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "360,00",
+      "vencimento": "29/12/2025",
+      "nf": "7475",
+      "dataProcessamento": "2025-12-29",
+      "pago": false,
+      "ficheiro": "2025-12-29_AV_DAS_NACOES,_225_CENTRO_-_PETROLINA_-_PE_CEP56304360_NF7475.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "825,00",
+      "vencimento": "29/12/2025",
+      "nf": "7478",
+      "dataProcessamento": "2025-12-29",
+      "pago": false,
+      "ficheiro": "2025-12-29_RUA_DR_JULIO_DE_MELO,_538_B_CENTRO_-_PETROLINA_-_PE_CEP56302150_NF7478.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTAÇÃO LTDA",
+      "pagador": "(=) Valor do Documento",
+      "valor": "1.750,00",
+      "vencimento": "14/01/2026",
+      "nf": "12202",
+      "dataProcessamento": "2026-01-14",
+      "pago": false,
+      "ficheiro": "2026-01-14_R_SAO_VICENTE_DE_PAULA,_219_ATRAS_DA_BANCA_-_PETROLINA_-_PE_CEP56308050_NF12202.pdf"
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "Não identificado",
+      "valor": "1.600,00",
+      "vencimento": "30/03/2026",
+      "nf": "12457",
+      "dataProcessamento": "2026-03-11",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "Não identificado",
+      "valor": "1.600,00",
+      "vencimento": "10/04/2026",
+      "nf": "12462",
+      "dataProcessamento": "2026-03-11",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "Não identificado",
+      "valor": "1.600,00",
+      "vencimento": "13/04/2026",
+      "nf": "12466",
+      "dataProcessamento": "2026-03-12",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "Não identificado",
+      "pagador": "Não identificado",
+      "valor": "15.000,00",
+      "vencimento": "13/03/2026",
+      "nf": "SN",
+      "dataProcessamento": "2026-03-13",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "Não identificado",
+      "valor": "480,00",
+      "vencimento": "27/03/2026",
+      "nf": "7505",
+      "dataProcessamento": "2026-03-13",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "Não identificado",
+      "valor": "640,00",
+      "vencimento": "27/03/2026",
+      "nf": "7506",
+      "dataProcessamento": "2026-03-13",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "Não identificado",
+      "valor": "1.600,00",
+      "vencimento": "03/04/2026",
+      "nf": "12471",
+      "dataProcessamento": "2026-03-13",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "Não identificado",
+      "valor": "1.500,00",
+      "vencimento": "13/04/2026",
+      "nf": "7507",
+      "dataProcessamento": "2026-03-13",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "Não identificado",
+      "valor": "6.400,00",
+      "vencimento": "15/04/2026",
+      "nf": "7509",
+      "dataProcessamento": "2026-03-16",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "Não identificado",
+      "valor": "800,00",
+      "vencimento": "23/03/2026",
+      "nf": "7510",
+      "dataProcessamento": "2026-03-17",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "Não identificado",
+      "valor": "2.400,00",
+      "vencimento": "07/04/2026",
+      "nf": "7518",
+      "dataProcessamento": "2026-03-18",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "Não identificado",
+      "valor": "4.500,00",
+      "vencimento": "17/04/2026",
+      "nf": "7512",
+      "dataProcessamento": "2026-03-18",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "Não identificado",
+      "valor": "5.250,00",
+      "vencimento": "17/04/2026",
+      "nf": "7513",
+      "dataProcessamento": "2026-03-18",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "Não identificado",
+      "valor": "6.000,00",
+      "vencimento": "17/04/2026",
+      "nf": "7514",
+      "dataProcessamento": "2026-03-18",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "J E COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.600,00",
+      "vencimento": "17/04/2026",
+      "nf": "7519",
+      "dataProcessamento": "2026-03-18",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "Não identificado",
+      "pagador": "Não identificado",
+      "valor": "19.500,00",
+      "vencimento": "18/03/2026",
+      "nf": "SN",
+      "dataProcessamento": "2026-03-18",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SUPERMERCADO REGENTE LTDA",
+      "valor": "640,00",
+      "vencimento": "03/04/2026",
+      "nf": "7520",
+      "dataProcessamento": "2026-03-19",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SUPERMERCADO REGENTE LTDA",
+      "valor": "320,00",
+      "vencimento": "03/04/2026",
+      "nf": "7521",
+      "dataProcessamento": "2026-03-19",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "DESTAK EMBALAGEM LTDA",
+      "pagador": "JNS COMERCIO DE PRODUTOS ALIME",
+      "valor": "2.400,00",
+      "vencimento": "18/04/2026",
+      "nf": "45189",
+      "dataProcessamento": "2026-03-19",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "S N SOARES E CIA LTDA",
+      "valor": "1.600,00",
+      "vencimento": "20/04/2026",
+      "nf": "7523",
+      "dataProcessamento": "2026-03-20",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "HORTIFRUT GADELHA LTDA",
+      "valor": "2.400,00",
+      "vencimento": "23/04/2026",
+      "nf": "7530",
+      "dataProcessamento": "2026-03-24",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "JN COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.600,00",
+      "vencimento": "24/04/2026",
+      "nf": "7537",
+      "dataProcessamento": "2026-03-25",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SUPERMERCADO REGENTE LTDA",
+      "valor": "320,00",
+      "vencimento": "10/04/2026",
+      "nf": "7539",
+      "dataProcessamento": "2026-03-27",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SUPERMERCADO REGENTE LTDA",
+      "valor": "640,00",
+      "vencimento": "10/04/2026",
+      "nf": "7540",
+      "dataProcessamento": "2026-03-27",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "950,00",
+      "vencimento": "02/04/2026",
+      "nf": "7541",
+      "dataProcessamento": "2026-03-27",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "DESTAK EMBALAGEM LTDA",
+      "pagador": "JNS COMERCIO DE PRODUTOS ALIME",
+      "valor": "2.400,00",
+      "vencimento": "26/04/2026",
+      "nf": "45634",
+      "dataProcessamento": "2026-03-27",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "Não identificado",
+      "pagador": "Não identificado",
+      "valor": "1.630,00",
+      "vencimento": "27/03/2026",
+      "nf": "SN",
+      "dataProcessamento": "2026-03-28",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "6.000,00",
+      "vencimento": "29/04/2026",
+      "nf": "12493",
+      "dataProcessamento": "2026-03-30",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "S N SOARES E CIA LTDA",
+      "valor": "1.600,00",
+      "vencimento": "29/04/2026",
+      "nf": "12494",
+      "dataProcessamento": "2026-03-30",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "J E COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.600,00",
+      "vencimento": "29/04/2026",
+      "nf": "12496",
+      "dataProcessamento": "2026-03-30",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "Não identificado",
+      "pagador": "Não identificado",
+      "valor": "1.280,00",
+      "vencimento": "30/03/2026",
+      "nf": "SN",
+      "dataProcessamento": "2026-03-30",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "800,00",
+      "vencimento": "06/04/2026",
+      "nf": "12506",
+      "dataProcessamento": "2026-03-31",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "E D PREMIUM COMPANHIA DE ALIMENTOS LTDA",
+      "valor": "340,00",
+      "vencimento": "16/04/2026",
+      "nf": "7550",
+      "dataProcessamento": "2026-04-06",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SUPERMERCADO REGENTE LTDA",
+      "valor": "850,00",
+      "vencimento": "21/04/2026",
+      "nf": "7549",
+      "dataProcessamento": "2026-04-06",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SUPERMERCADO REGENTE LTDA",
+      "valor": "510,00",
+      "vencimento": "21/04/2026",
+      "nf": "7548",
+      "dataProcessamento": "2026-04-06",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SB SUPERMERCADO LTDA",
+      "valor": "2.400,00",
+      "vencimento": "21/04/2026",
+      "nf": "7551",
+      "dataProcessamento": "2026-04-06",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "JN COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.500,00",
+      "vencimento": "08/05/2026",
+      "nf": "12508",
+      "dataProcessamento": "2026-04-08",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "6.000,00",
+      "vencimento": "08/05/2026",
+      "nf": "7554",
+      "dataProcessamento": "2026-04-09",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "S N SOARES E CIA LTDA",
+      "valor": "1.500,00",
+      "vencimento": "08/05/2026",
+      "nf": "7553",
+      "dataProcessamento": "2026-04-09",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SUPERMERCADO REGENTE LTDA",
+      "valor": "510,00",
+      "vencimento": "24/04/2026",
+      "nf": "7556",
+      "dataProcessamento": "2026-04-09",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SUPERMERCADO REGENTE LTDA",
+      "valor": "850,00",
+      "vencimento": "24/04/2026",
+      "nf": "7558",
+      "dataProcessamento": "2026-04-09",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "300,00",
+      "vencimento": "16/04/2026",
+      "nf": "12511",
+      "dataProcessamento": "2026-04-09",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "1.020,00",
+      "vencimento": "16/04/2026",
+      "nf": "7557",
+      "dataProcessamento": "2026-04-09",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "Não identificado",
+      "pagador": "Não identificado",
+      "valor": "828,32",
+      "vencimento": "10/04/2026",
+      "nf": "SN",
+      "dataProcessamento": "2026-04-10",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SB5 SUPERMERCADOS LTDA",
+      "valor": "1.600,00",
+      "vencimento": "29/04/2026",
+      "nf": "12512",
+      "dataProcessamento": "2026-04-10",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SB SUPERMERCADO LTDA",
+      "valor": "2.400,00",
+      "vencimento": "04/05/2026",
+      "nf": "12516",
+      "dataProcessamento": "2026-04-13",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "6.000,00",
+      "vencimento": "13/05/2026",
+      "nf": "12517",
+      "dataProcessamento": "2026-04-13",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "J E COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.500,00",
+      "vencimento": "13/05/2026",
+      "nf": "12518",
+      "dataProcessamento": "2026-04-13",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "JN COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.500,00",
+      "vencimento": "13/05/2026",
+      "nf": "12519",
+      "dataProcessamento": "2026-04-13",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "S N SOARES E CIA LTDA",
+      "valor": "1.500,00",
+      "vencimento": "13/05/2026",
+      "nf": "12520",
+      "dataProcessamento": "2026-04-13",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "VITORIA ATACAREJO DISTRIBUIDORA DE ALIMENTOS LTDA",
+      "valor": "2.250,00",
+      "vencimento": "12/05/2026",
+      "nf": "7559",
+      "dataProcessamento": "2026-04-14",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SUPERMERCADO REGENTE LTDA",
+      "valor": "510,00",
+      "vencimento": "29/04/2026",
+      "nf": "12527",
+      "dataProcessamento": "2026-04-14",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "S.FELIX DISTRIBUIDORA E COMERCIO DE PRODUTOS ALIMENTICIOS",
+      "valor": "4.100,00",
+      "vencimento": "11/05/2026",
+      "nf": "12528",
+      "dataProcessamento": "2026-04-14",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SUPERMERCADO REGENTE LTDA",
+      "valor": "850,00",
+      "vencimento": "29/04/2026",
+      "nf": "12526",
+      "dataProcessamento": "2026-04-15",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "Não identificado",
+      "pagador": "Instituição:COOPERATIVA DE CRÉDITO SUL DO ESPÍRITO SANTO - SICOOB SUL",
+      "valor": "663,00",
+      "vencimento": "15/04/2026",
+      "nf": "SN",
+      "dataProcessamento": "2026-04-15",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "Pagador",
+      "pagador": "Não identificado",
+      "valor": "89,90",
+      "vencimento": "15/12/2025",
+      "nf": "SN",
+      "dataProcessamento": "2026-04-16",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "850,00",
+      "vencimento": "24/04/2026",
+      "nf": "7563",
+      "dataProcessamento": "2026-04-17",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "HORTIFRUT GADELHA LTDA",
+      "valor": "2.400,00",
+      "vencimento": "21/05/2026",
+      "nf": "12540",
+      "dataProcessamento": "2026-04-21",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "JN COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.500,00",
+      "vencimento": "21/05/2026",
+      "nf": "12541",
+      "dataProcessamento": "2026-04-21",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "E D PREMIUM COMPANHIA DE ALIMENTOS LTDA",
+      "valor": "850,00",
+      "vencimento": "01/05/2026",
+      "nf": "12542",
+      "dataProcessamento": "2026-04-21",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "J E COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.500,00",
+      "vencimento": "21/05/2026",
+      "nf": "12543",
+      "dataProcessamento": "2026-04-21",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "6.000,00",
+      "vencimento": "21/05/2026",
+      "nf": "12544",
+      "dataProcessamento": "2026-04-21",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "S N SOARES E CIA LTDA",
+      "valor": "1.500,00",
+      "vencimento": "22/05/2026",
+      "nf": "12546",
+      "dataProcessamento": "2026-04-22",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "COMERCIAL M & F CONDIMENTOS E EMBALAGENS LTDA",
+      "valor": "13.620,00",
+      "vencimento": "22/06/2026",
+      "nf": "12547",
+      "dataProcessamento": "2026-04-22",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "C A RIBEIRO",
+      "valor": "1.600,00",
+      "vencimento": "13/05/2026",
+      "nf": "12550",
+      "dataProcessamento": "2026-04-22",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "Não identificado",
+      "valor": "0,00",
+      "vencimento": "Indefinido",
+      "nf": "SN",
+      "dataProcessamento": "2026-04-23",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "Não identificado",
+      "valor": "0,00",
+      "vencimento": "16/04/2026",
+      "nf": "SN",
+      "dataProcessamento": "2026-04-23",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SUPERMERCADO REGENTE LTDA",
+      "valor": "510,00",
+      "vencimento": "12/05/2026",
+      "nf": "12557",
+      "dataProcessamento": "2026-04-27",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SUPERMERCADO REGENTE LTDA",
+      "valor": "510,00",
+      "vencimento": "12/05/2026",
+      "nf": "12560",
+      "dataProcessamento": "2026-04-27",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SB SUPERMERCADO LTDA",
+      "valor": "2.400,00",
+      "vencimento": "18/05/2026",
+      "nf": "12558",
+      "dataProcessamento": "2026-04-27",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "6.000,00",
+      "vencimento": "27/05/2026",
+      "nf": "12559",
+      "dataProcessamento": "2026-04-27",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "1.170,00",
+      "vencimento": "04/05/2026",
+      "nf": "12565",
+      "dataProcessamento": "2026-04-27",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "S N SOARES E CIA LTDA",
+      "valor": "1.500,00",
+      "vencimento": "29/05/2026",
+      "nf": "12570",
+      "dataProcessamento": "2026-04-29",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "JN COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.500,00",
+      "vencimento": "29/05/2026",
+      "nf": "12572",
+      "dataProcessamento": "2026-04-29",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "J E COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.500,00",
+      "vencimento": "09/06/2026",
+      "nf": "12584",
+      "dataProcessamento": "2026-04-30",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SUPERMERCADO REGENTE LTDA",
+      "valor": "680,00",
+      "vencimento": "15/05/2026",
+      "nf": "12586",
+      "dataProcessamento": "2026-04-30",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SUPERMERCADO REGENTE LTDA",
+      "valor": "510,00",
+      "vencimento": "15/05/2026",
+      "nf": "12585",
+      "dataProcessamento": "2026-04-30",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "6.000,00",
+      "vencimento": "05/06/2026",
+      "nf": "12597",
+      "dataProcessamento": "2026-05-06",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "900,00",
+      "vencimento": "12/05/2026",
+      "nf": "12598",
+      "dataProcessamento": "2026-05-06",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "C A RIBEIRO",
+      "valor": "2.400,00",
+      "vencimento": "05/06/2026",
+      "nf": "12599",
+      "dataProcessamento": "2026-05-06",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SB SUPERMERCADO LTDA",
+      "valor": "2.400,00",
+      "vencimento": "26/05/2026",
+      "nf": "12600",
+      "dataProcessamento": "2026-05-06",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SUPERMERCADO REGENTE LTDA",
+      "valor": "360,00",
+      "vencimento": "21/05/2026",
+      "nf": "12603",
+      "dataProcessamento": "2026-05-06",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SUPERMERCADO REGENTE LTDA",
+      "valor": "900,00",
+      "vencimento": "21/05/2026",
+      "nf": "12604",
+      "dataProcessamento": "2026-05-06",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "S N SOARES E CIA LTDA",
+      "valor": "1.500,00",
+      "vencimento": "08/06/2026",
+      "nf": "12609",
+      "dataProcessamento": "2026-05-07",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "JN COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "2.250,00",
+      "vencimento": "08/06/2026",
+      "nf": "12610",
+      "dataProcessamento": "2026-05-07",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "9.000,00",
+      "vencimento": "08/06/2026",
+      "nf": "12611",
+      "dataProcessamento": "2026-05-08",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "J E COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "2.250,00",
+      "vencimento": "08/06/2026",
+      "nf": "12612",
+      "dataProcessamento": "2026-05-08",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "Não identificado",
+      "pagador": "Não identificado",
+      "valor": "878,07",
+      "vencimento": "08/05/2026",
+      "nf": "SN",
+      "dataProcessamento": "2026-05-08",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "Não identificado",
+      "pagador": "Não identificado",
+      "valor": "660,00",
+      "vencimento": "12/05/2026",
+      "nf": "SN",
+      "dataProcessamento": "2026-05-12",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "S N SOARES E CIA LTDA",
+      "valor": "2.400,00",
+      "vencimento": "12/06/2026",
+      "nf": "12631",
+      "dataProcessamento": "2026-05-13",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SUPERMERCADO REGENTE LTDA",
+      "valor": "540,00",
+      "vencimento": "01/06/2026",
+      "nf": "7579",
+      "dataProcessamento": "2026-05-15",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SUPERMERCADO REGENTE LTDA",
+      "valor": "360,00",
+      "vencimento": "01/06/2026",
+      "nf": "7580",
+      "dataProcessamento": "2026-05-15",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "JN COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.600,00",
+      "vencimento": "17/06/2026",
+      "nf": "12646",
+      "dataProcessamento": "2026-05-18",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "900,00",
+      "vencimento": "25/05/2026",
+      "nf": "12648",
+      "dataProcessamento": "2026-05-18",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "Efetivo",
+      "valor": "0,00",
+      "vencimento": "13/05/2026",
+      "nf": "SN",
+      "dataProcessamento": "2026-05-18",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SB5 SUPERMERCADOS LTDA",
+      "valor": "1.600,00",
+      "vencimento": "08/06/2026",
+      "nf": "12652",
+      "dataProcessamento": "2026-05-19",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SB SUPERMERCADO LTDA",
+      "valor": "3.200,00",
+      "vencimento": "08/06/2026",
+      "nf": "12653",
+      "dataProcessamento": "2026-05-19",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "Efetivo",
+      "valor": "0,00",
+      "vencimento": "08/05/2026",
+      "nf": "SN",
+      "dataProcessamento": "2026-05-20",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "FRINENSE ALIMENTOS LTDAR$12921160000055536-5",
+      "pagador": "r/Avalista",
+      "valor": "633.000,00",
+      "vencimento": "22/05/2026",
+      "nf": "SN",
+      "dataProcessamento": "2026-05-21",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SERVE BEM SUPERMERCADO LTDA",
+      "valor": "2.550,00",
+      "vencimento": "10/06/2026",
+      "nf": "12656",
+      "dataProcessamento": "2026-05-21",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SUPERMERCADO REGENTE LTDA",
+      "valor": "600,00",
+      "vencimento": "08/06/2026",
+      "nf": "12660",
+      "dataProcessamento": "2026-05-22",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SUPERMERCADO REGENTE LTDA",
+      "valor": "1.000,00",
+      "vencimento": "08/06/2026",
+      "nf": "12661",
+      "dataProcessamento": "2026-05-22",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "900,00",
+      "vencimento": "29/05/2026",
+      "nf": "12662",
+      "dataProcessamento": "2026-05-22",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "S N SOARES E CIA LTDA",
+      "valor": "2.400,00",
+      "vencimento": "25/06/2026",
+      "nf": "12676",
+      "dataProcessamento": "2026-05-26",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "6.400,00",
+      "vencimento": "25/06/2026",
+      "nf": "12677",
+      "dataProcessamento": "2026-05-26",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "JN COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.800,00",
+      "vencimento": "06/07/2026",
+      "nf": "12709",
+      "dataProcessamento": "2026-06-05",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "900,00",
+      "vencimento": "05/06/2026",
+      "nf": "12694",
+      "dataProcessamento": "2026-06-05",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SB SUPERMERCADO LTDA",
+      "valor": "2.850,00",
+      "vencimento": "22/06/2026",
+      "nf": "12701",
+      "dataProcessamento": "2026-06-05",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SUPERMERCADO REGENTE LTDA",
+      "valor": "1.000,00",
+      "vencimento": "17/06/2026",
+      "nf": "12702",
+      "dataProcessamento": "2026-06-05",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "6.400,00",
+      "vencimento": "03/07/2026",
+      "nf": "12704",
+      "dataProcessamento": "2026-06-05",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "J E COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.600,00",
+      "vencimento": "24/06/2026",
+      "nf": "12667",
+      "dataProcessamento": "2026-06-05",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "C A RIBEIRO",
+      "valor": "2.400,00",
+      "vencimento": "24/06/2026",
+      "nf": "12664",
+      "dataProcessamento": "2026-06-05",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "900,00",
+      "vencimento": "15/06/2026",
+      "nf": "12713",
+      "dataProcessamento": "2026-06-08",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "S N SOARES E CIA LTDA",
+      "valor": "1.800,00",
+      "vencimento": "08/07/2026",
+      "nf": "12711",
+      "dataProcessamento": "2026-06-08",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SUPERMERCADO REGENTE LTDA",
+      "valor": "950,00",
+      "vencimento": "23/06/2026",
+      "nf": "12712",
+      "dataProcessamento": "2026-06-08",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SUPERMERCADO REGENTE LTDA",
+      "valor": "570,00",
+      "vencimento": "23/06/2026",
+      "nf": "12714",
+      "dataProcessamento": "2026-06-08",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "7.200,00",
+      "vencimento": "09/07/2026",
+      "nf": "12718",
+      "dataProcessamento": "2026-06-09",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "Não identificado",
+      "pagador": "Não identificado",
+      "valor": "935,53",
+      "vencimento": "10/06/2026",
+      "nf": "SN",
+      "dataProcessamento": "2026-06-10",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SB SUPERMERCADO LTDA",
+      "valor": "2.850,00",
+      "vencimento": "02/07/2026",
+      "nf": "12729",
+      "dataProcessamento": "2026-06-12",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "C A RIBEIRO",
+      "valor": "2.550,00",
+      "vencimento": "13/07/2026",
+      "nf": "12730",
+      "dataProcessamento": "2026-06-12",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "J E COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.800,00",
+      "vencimento": "13/07/2026",
+      "nf": "12731",
+      "dataProcessamento": "2026-06-12",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "900,00",
+      "vencimento": "22/06/2026",
+      "nf": "12738",
+      "dataProcessamento": "2026-06-15",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "JN COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "3.600,00",
+      "vencimento": "15/07/2026",
+      "nf": "12739",
+      "dataProcessamento": "2026-06-15",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "Não identificado",
+      "pagador": "Não identificado",
+      "valor": "510,00",
+      "vencimento": "16/06/2026",
+      "nf": "SN",
+      "dataProcessamento": "2026-06-16",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "HORTIFRUT GADELHA LTDA",
+      "valor": "2.700,00",
+      "vencimento": "16/07/2026",
+      "nf": "12743",
+      "dataProcessamento": "2026-06-16",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "7.200,00",
+      "vencimento": "16/07/2026",
+      "nf": "12746",
+      "dataProcessamento": "2026-06-16",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "S N SOARES E CIA LTDA",
+      "valor": "1.800,00",
+      "vencimento": "17/07/2026",
+      "nf": "12750",
+      "dataProcessamento": "2026-06-17",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "900,00",
+      "vencimento": "25/06/2026",
+      "nf": "12759",
+      "dataProcessamento": "2026-06-18",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SUPERMERCADO REGENTE LTDA",
+      "valor": "760,00",
+      "vencimento": "06/07/2026",
+      "nf": "12764",
+      "dataProcessamento": "2026-06-19",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SUPERMERCADO REGENTE LTDA",
+      "valor": "950,00",
+      "vencimento": "03/07/2026",
+      "nf": "12760",
+      "dataProcessamento": "2026-06-19",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SUPERMERCADO REGENTE LTDA",
+      "valor": "540,00",
+      "vencimento": "14/07/2026",
+      "nf": "12805",
+      "dataProcessamento": "2026-06-30",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SUPERMERCADO REGENTE LTDA",
+      "valor": "540,00",
+      "vencimento": "14/07/2026",
+      "nf": "12804",
+      "dataProcessamento": "2026-06-30",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "JN COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.800,00",
+      "vencimento": "27/07/2026",
+      "nf": "12785",
+      "dataProcessamento": "2026-06-30",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "900,00",
+      "vencimento": "02/07/2026",
+      "nf": "12787",
+      "dataProcessamento": "2026-06-30",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "S N SOARES E CIA LTDA",
+      "valor": "1.800,00",
+      "vencimento": "22/07/2026",
+      "nf": "12771",
+      "dataProcessamento": "2026-06-30",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SB5 SUPERMERCADOS LTDA",
+      "valor": "1.900,00",
+      "vencimento": "13/07/2026",
+      "nf": "12772",
+      "dataProcessamento": "2026-06-30",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "11.700,00",
+      "vencimento": "22/07/2026",
+      "nf": "12773",
+      "dataProcessamento": "2026-06-30",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "J E COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.800,00",
+      "vencimento": "22/07/2026",
+      "nf": "12776",
+      "dataProcessamento": "2026-06-30",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "J E COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.800,00",
+      "vencimento": "20/08/2026",
+      "nf": "12896",
+      "dataProcessamento": "2026-07-24",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "850,00",
+      "vencimento": "27/07/2026",
+      "nf": "12895",
+      "dataProcessamento": "2026-07-24",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "8.100,00",
+      "vencimento": "17/08/2026",
+      "nf": "12888",
+      "dataProcessamento": "2026-07-24",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "JN COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.800,00",
+      "vencimento": "21/08/2026",
+      "nf": "12899",
+      "dataProcessamento": "2026-07-24",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SUPERMERCADO REGENTE LTDA",
+      "valor": "900,00",
+      "vencimento": "03/08/2026",
+      "nf": "12887",
+      "dataProcessamento": "2026-07-24",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "S N SOARES E CIA LTDA",
+      "valor": "1.800,00",
+      "vencimento": "24/08/2026",
+      "nf": "12905",
+      "dataProcessamento": "2026-07-24",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SB SUPERMERCADO LTDA",
+      "valor": "2.850,00",
+      "vencimento": "04/08/2026",
+      "nf": "12882",
+      "dataProcessamento": "2026-07-24",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "E D PREMIUM COMPANHIA DE ALIMENTOS LTDA",
+      "valor": "540,00",
+      "vencimento": "20/07/2026",
+      "nf": "12855",
+      "dataProcessamento": "2026-07-24",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "900,00",
+      "vencimento": "16/07/2026",
+      "nf": "12857",
+      "dataProcessamento": "2026-07-24",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "JN COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.800,00",
+      "vencimento": "10/08/2026",
+      "nf": "12854",
+      "dataProcessamento": "2026-07-24",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "Não identificado",
+      "pagador": "Não identificado",
+      "valor": "300,00",
+      "vencimento": "25/07/2026",
+      "nf": "SN",
+      "dataProcessamento": "2026-07-25",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "S N SOARES E CIA LTDA",
+      "valor": "1.800,00",
+      "vencimento": "26/08/2026",
+      "nf": "12909",
+      "dataProcessamento": "2026-07-27",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SB5 SUPERMERCADOS LTDA",
+      "valor": "1.900,00",
+      "vencimento": "17/08/2026",
+      "nf": "12910",
+      "dataProcessamento": "2026-07-27",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "11.700,00",
+      "vencimento": "02/09/2026",
+      "nf": "12939",
+      "dataProcessamento": "2026-08-04",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SUPERMERCADO REGENTE LTDA",
+      "valor": "400,00",
+      "vencimento": "18/08/2026",
+      "nf": "12941",
+      "dataProcessamento": "2026-08-04",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "900,00",
+      "vencimento": "10/08/2026",
+      "nf": "12940",
+      "dataProcessamento": "2026-08-04",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SUPERMERCADO REGENTE LTDA",
+      "valor": "1.000,00",
+      "vencimento": "18/08/2026",
+      "nf": "12942",
+      "dataProcessamento": "2026-08-04",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SB SUPERMERCADO LTDA",
+      "valor": "1.900,00",
+      "vencimento": "26/08/2026",
+      "nf": "12943",
+      "dataProcessamento": "2026-08-05",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SB SUPERMERCADO LTDA",
+      "valor": "1.900,00",
+      "vencimento": "17/08/2026",
+      "nf": "12924",
+      "dataProcessamento": "2026-08-05",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SUPERMERCADO REGENTE LTDA",
+      "valor": "380,00",
+      "vencimento": "12/08/2026",
+      "nf": "12922",
+      "dataProcessamento": "2026-08-05",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "J E COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.800,00",
+      "vencimento": "07/09/2026",
+      "nf": "12946",
+      "dataProcessamento": "2026-08-06",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "S N SOARES E CIA LTDA",
+      "valor": "1.800,00",
+      "vencimento": "07/09/2026",
+      "nf": "12947",
+      "dataProcessamento": "2026-08-07",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "C A RIBEIRO",
+      "valor": "2.700,00",
+      "vencimento": "07/09/2026",
+      "nf": "12948",
+      "dataProcessamento": "2026-08-07",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SUPERMERCADO REGENTE LTDA",
+      "valor": "1.000,00",
+      "vencimento": "24/08/2026",
+      "nf": "12950",
+      "dataProcessamento": "2026-08-07",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SUPERMERCADO REGENTE LTDA",
+      "valor": "800,00",
+      "vencimento": "24/08/2026",
+      "nf": "12951",
+      "dataProcessamento": "2026-08-07",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "8.100,00",
+      "vencimento": "09/09/2026",
+      "nf": "12953",
+      "dataProcessamento": "2026-08-10",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "JN COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.800,00",
+      "vencimento": "09/09/2026",
+      "nf": "12952",
+      "dataProcessamento": "2026-08-10",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SB SUPERMERCADO LTDA",
+      "valor": "2.850,00",
+      "vencimento": "31/08/2026",
+      "nf": "12954",
+      "dataProcessamento": "2026-08-10",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "E D PREMIUM COMPANHIA DE ALIMENTOS LTDA",
+      "valor": "380,00",
+      "vencimento": "24/08/2026",
+      "nf": "12959",
+      "dataProcessamento": "2026-08-12",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "E D PREMIUM COMPANHIA DE ALIMENTOS LTDA",
+      "valor": "380,00",
+      "vencimento": "11/09/2026",
+      "nf": "12960",
+      "dataProcessamento": "2026-08-12",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "J E COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.800,00",
+      "vencimento": "14/09/2026",
+      "nf": "12966",
+      "dataProcessamento": "2026-08-14",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "C A RIBEIRO",
+      "valor": "2.850,00",
+      "vencimento": "03/08/2026",
+      "nf": "12817",
+      "dataProcessamento": "2026-08-14",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "12.600,00",
+      "vencimento": "14/08/2026",
+      "nf": "12881",
+      "dataProcessamento": "2026-08-16",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "900,00",
+      "vencimento": "04/08/2026",
+      "nf": "12923",
+      "dataProcessamento": "2026-08-16",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "E D PREMIUM COMPANHIA DE ALIMENTOS LTDA",
+      "valor": "400,00",
+      "vencimento": "27/08/2026",
+      "nf": "12968",
+      "dataProcessamento": "2026-08-17",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SUPERMERCADO REGENTE LTDA",
+      "valor": "950,00",
+      "vencimento": "01/09/2026",
+      "nf": "12969",
+      "dataProcessamento": "2026-08-17",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "8.100,00",
+      "vencimento": "16/09/2026",
+      "nf": "12971",
+      "dataProcessamento": "2026-08-17",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "950,00",
+      "vencimento": "24/08/2026",
+      "nf": "12972",
+      "dataProcessamento": "2026-08-17",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "JN COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.800,00",
+      "vencimento": "17/09/2026",
+      "nf": "12975",
+      "dataProcessamento": "2026-08-18",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "S N SOARES E CIA LTDA",
+      "valor": "1.800,00",
+      "vencimento": "17/09/2026",
+      "nf": "12976",
+      "dataProcessamento": "2026-08-18",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SUPERMERCADO REGENTE LTDA",
+      "valor": "570,00",
+      "vencimento": "04/09/2026",
+      "nf": "12980",
+      "dataProcessamento": "2026-08-20",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SUPERMERCADO REGENTE LTDA",
+      "valor": "800,00",
+      "vencimento": "07/09/2026",
+      "nf": "12981",
+      "dataProcessamento": "2026-08-21",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "570,00",
+      "vencimento": "31/08/2026",
+      "nf": "12982",
+      "dataProcessamento": "2026-08-24",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SB5 SUPERMERCADOS LTDA",
+      "valor": "1.900,00",
+      "vencimento": "14/09/2026",
+      "nf": "12985",
+      "dataProcessamento": "2026-08-25",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SUPERMERCADO REGENTE LTDA",
+      "valor": "800,00",
+      "vencimento": "10/09/2026",
+      "nf": "12990",
+      "dataProcessamento": "2026-08-26",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "600,00",
+      "vencimento": "08/09/2026",
+      "nf": "12994",
+      "dataProcessamento": "2026-08-27",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "J E COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.800,00",
+      "vencimento": "28/09/2026",
+      "nf": "12995",
+      "dataProcessamento": "2026-08-27",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SUPERMERCADO REGENTE LTDA",
+      "valor": "800,00",
+      "vencimento": "14/09/2026",
+      "nf": "12999",
+      "dataProcessamento": "2026-08-28",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "9.900,00",
+      "vencimento": "30/09/2026",
+      "nf": "13002",
+      "dataProcessamento": "2026-08-31",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "S N SOARES E CIA LTDA",
+      "valor": "2.700,00",
+      "vencimento": "30/09/2026",
+      "nf": "13003",
+      "dataProcessamento": "2026-08-31",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "SB SUPERMERCADO LTDA",
+      "valor": "2.850,00",
+      "vencimento": "22/09/2026",
+      "nf": "13004",
+      "dataProcessamento": "2026-09-02",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "C A RIBEIRO",
+      "valor": "2.850,00",
+      "vencimento": "05/10/2026",
+      "nf": "13005",
+      "dataProcessamento": "2026-09-03",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "JN COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.800,00",
+      "vencimento": "05/10/2026",
+      "nf": "13006",
+      "dataProcessamento": "2026-09-03",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "S N SOARES E CIA LTDA",
+      "valor": "2.700,00",
+      "vencimento": "09/10/2026",
+      "nf": "7686",
+      "dataProcessamento": "2026-09-09",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "J E COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.800,00",
+      "vencimento": "09/10/2026",
+      "nf": "13016",
+      "dataProcessamento": "2026-09-09",
+      "pago": false
+    },
+    {
+      "tipo": "BOLETO",
+      "beneficiario": "COMERCIAL PATY IMPORTACAO LTDA",
+      "pagador": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "11.700,00",
+      "vencimento": "09/10/2026",
+      "nf": "7685",
+      "dataProcessamento": "2026-09-09",
+      "pago": false
+    }
+  ],
+  "notas": [
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "AMARELAO COMERCIO VAREJISTA DE ALIMENTOS LTDA",
+      "valor": "290,00",
+      "numero": "4123",
+      "dataProcessamento": "2026-03-06"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "S N SOARES E CIA LTDA",
+      "valor": "0,00",
+      "numero": "12277",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF - CB - 12277 - SN SOARES E CIA LTDA (PETROLINA PE).pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "0,00",
+      "numero": "12243",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_12243_COMERCIAL_PATY_IMPORTACAO_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "0,00",
+      "numero": "12244",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_12244_COMERCIAL_PATY_IMPORTACAO_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JN COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "0,00",
+      "numero": "12248",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_12248_COMERCIAL_PATY_IMPORTACAO_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "S N SOARES E CIA LTDA",
+      "valor": "0,00",
+      "numero": "12249",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_12249_COMERCIAL_PATY_IMPORTACAO_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SB SUPERMERCADO LTDA",
+      "valor": "0,00",
+      "numero": "12253",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_12253_COMERCIAL_PATY_IMPORTACAO_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "0,00",
+      "numero": "12261",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_12261_COMERCIAL_PATY_IMPORTACAO_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "0,00",
+      "numero": "12262",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_12262_COMERCIAL_PATY_IMPORTACAO_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "0,00",
+      "numero": "12263",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_12263_COMERCIAL_PATY_IMPORTACAO_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "0,00",
+      "numero": "12267",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_12267_COMERCIAL_PATY_IMPORTACAO_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "0,00",
+      "numero": "12268",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_12268_COMERCIAL_PATY_IMPORTACAO_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "J E COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "0,00",
+      "numero": "12278",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_12278_COMERCIAL_PATY_IMPORTACAO_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "REIS COMERCIO E DISTRIBUICAO DE ALIMENTOS LTDA",
+      "valor": "0,00",
+      "numero": "12298",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_12298_COMERCIAL_PATY_IMPORTACAO_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "0,00",
+      "numero": "12302",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_12302_COMERCIAL_PATY_IMPORTACAO_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "0,00",
+      "numero": "12303",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_12303_COMERCIAL_PATY_IMPORTACAO_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "0,00",
+      "numero": "12342",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_12342_COMERCIAL_PATY_IMPORTACAO_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JN COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "0,00",
+      "numero": "12391",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_12391_COMERCIAL_PATY_IMPORTACAO_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "S N SOARES E CIA LTDA",
+      "valor": "0,00",
+      "numero": "12412",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_12412_COMERCIAL_PATY_IMPORTACAO_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JN COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "0,00",
+      "numero": "12413",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_12413_COMERCIAL_PATY_IMPORTACAO_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "J E COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "0,00",
+      "numero": "12414",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_12414_COMERCIAL_PATY_IMPORTACAO_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SB SUPERMERCADO LTDA",
+      "valor": "0,00",
+      "numero": "12415",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_12415_COMERCIAL_PATY_IMPORTACAO_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "0,00",
+      "numero": "12426",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_12426_COMERCIAL_PATY_IMPORTACAO_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "0,00",
+      "numero": "12427",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_12427_COMERCIAL_PATY_IMPORTACAO_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "0,00",
+      "numero": "12437",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_12437_COMERCIAL_PATY_IMPORTACAO_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "0,00",
+      "numero": "12438",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_12438_COMERCIAL_PATY_IMPORTACAO_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SB5 SUPERMERCADOS LTDA",
+      "valor": "0,00",
+      "numero": "12439",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_12439_COMERCIAL_PATY_IMPORTACAO_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "HORTIFRUT GADELHA LTDA",
+      "valor": "0,00",
+      "numero": "12443",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_12443_COMERCIAL_PATY_IMPORTACAO_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "0,00",
+      "numero": "12444",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_12444_COMERCIAL_PATY_IMPORTACAO_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SB SUPERMERCADO LTDA",
+      "valor": "0,00",
+      "numero": "12445",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_12445_COMERCIAL_PATY_IMPORTACAO_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "S N SOARES E CIA LTDA",
+      "valor": "0,00",
+      "numero": "12446",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_12446_COMERCIAL_PATY_IMPORTACAO_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JN COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "0,00",
+      "numero": "12447",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_12447_COMERCIAL_PATY_IMPORTACAO_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "J E COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "0,00",
+      "numero": "12450",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_12450_COMERCIAL_PATY_IMPORTACAO_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BONTEMPO SUPERMERCADO LTDA",
+      "valor": "1.600,00",
+      "numero": "3974",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_3974_DESTAK_EMBALAGENS_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA LOJA 01",
+      "valor": "740,00",
+      "numero": "3975",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_3975_DESTAK_EMBALAGENS_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA LOJA 02",
+      "valor": "370,00",
+      "numero": "3976",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_3976_DESTAK_EMBALAGENS_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BENEDITO S. DA SILVA MERCEARIA LTDA",
+      "valor": "1.400,00",
+      "numero": "3992",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_3992_DESTAK_EMBALAGENS_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "FRUTOS DA TERRA MINIMERCADO LTDA - ME",
+      "valor": "925,00",
+      "numero": "3996",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_3996_DESTAK_EMBALAGENS_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BENEDITO S. DA SILVA MERCEARIA LTDA",
+      "valor": "700,00",
+      "numero": "4090",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_4090_DESTAK_EMBALAGENS_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BENEDITO S. DA SILVA MERCEARIA LTDA",
+      "valor": "700,00",
+      "numero": "4091",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_4091_DESTAK_EMBALAGENS_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "SB SUPERMERCADO LTDA",
+      "valor": "1.725,00",
+      "numero": "4157",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_4157_DESTAK_EMBALAGENS_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGEM LTDA",
+      "destinatario": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.411,78",
+      "numero": "43976",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_43976_DESTAK_EMBALAGEM_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGEM LTDA",
+      "destinatario": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.411,78",
+      "numero": "44416",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_44416_DESTAK_EMBALAGEM_LTDA.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTINATÁRIO/REMETENTE",
+      "destinatario": "DESTAK EMBALAGENS LTDA",
+      "valor": "4.560,00",
+      "numero": "596",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_596_DESTINATÁRIOREMETENTE.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "Lindomar Oliveira e Cia Ltda",
+      "destinatario": "Armazem Lacerda Ltda",
+      "valor": "500,00",
+      "numero": "7960",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_7960_Lindomar_Oliveira_e_Cia_Ltda.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DATA DE RECEBIMENTOIDENTIFICAC",
+      "destinatario": "RUA DA BARAUNA, 01783 - NUCLEO RESIDENCIAL PILAR.NUCLEO RESIDENCIAL48967000",
+      "valor": "90.847,46",
+      "numero": "SN",
+      "dataProcessamento": "2026-03-06",
+      "ficheiro": "NF_SN_DATA_DE_RECEBIMENTOIDENTIFICAC.pdf"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "L A DE ASSIS SACOLAS LTDA",
+      "destinatario": "Transportador / Volumes Transportados",
+      "valor": "0,00",
+      "numero": "SN",
+      "dataProcessamento": "2026-03-06"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGEM LTDA",
+      "destinatario": "CAPIM FRIOS EIRELI",
+      "valor": "485,30",
+      "numero": "44630",
+      "dataProcessamento": "2026-03-09"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGEM LTDA",
+      "destinatario": "CAPIM FRIOS LTDA",
+      "valor": "485,30",
+      "numero": "44631",
+      "dataProcessamento": "2026-03-09"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "0,00",
+      "numero": "12452",
+      "dataProcessamento": "2026-03-09"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGEM LTDA",
+      "destinatario": "CAPIM FRIOS EIRELI",
+      "valor": "485,30",
+      "numero": "44632",
+      "dataProcessamento": "2026-03-09"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGEM LTDA",
+      "destinatario": "CAPIM FRIOS EIRELI",
+      "valor": "485,30",
+      "numero": "44633",
+      "dataProcessamento": "2026-03-09"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "0,00",
+      "numero": "12453",
+      "dataProcessamento": "2026-03-09"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGEM LTDA",
+      "destinatario": "CAPIM FRIOS LTDA",
+      "valor": "529,42",
+      "numero": "44634",
+      "dataProcessamento": "2026-03-09"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "0,00",
+      "numero": "12454",
+      "dataProcessamento": "2026-03-09"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "0,00",
+      "numero": "12456",
+      "dataProcessamento": "2026-03-09"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BONTEMPO SUPERMERCADO LTDA",
+      "valor": "1.600,00",
+      "numero": "4198",
+      "dataProcessamento": "2026-03-09"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "C A RIBEIRO",
+      "valor": "0,00",
+      "numero": "12457",
+      "dataProcessamento": "2026-03-09"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "0,00",
+      "numero": "12458",
+      "dataProcessamento": "2026-03-09"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGEM LTDA",
+      "destinatario": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.411,78",
+      "numero": "44646",
+      "dataProcessamento": "2026-03-09"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "0,00",
+      "numero": "7403",
+      "dataProcessamento": "2026-03-10"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "0,00",
+      "numero": "7475",
+      "dataProcessamento": "2026-03-11"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "E D PREMIUM COMPANHIA DE ALIMENTOS LTDA",
+      "valor": "0,00",
+      "numero": "7359",
+      "dataProcessamento": "2026-03-11"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SB SUPERMERCADO LTDA",
+      "valor": "0,00",
+      "numero": "7418",
+      "dataProcessamento": "2026-03-11"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "S N SOARES E CIA LTDA",
+      "valor": "0,00",
+      "numero": "7386",
+      "dataProcessamento": "2026-03-11"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "0,00",
+      "numero": "7311",
+      "dataProcessamento": "2026-03-11"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "S N SOARES E CIA LTDA",
+      "valor": "0,00",
+      "numero": "12462",
+      "dataProcessamento": "2026-03-11"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JN COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "0,00",
+      "numero": "12466",
+      "dataProcessamento": "2026-03-12"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "0,00",
+      "numero": "7505",
+      "dataProcessamento": "2026-03-13"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "0,00",
+      "numero": "7506",
+      "dataProcessamento": "2026-03-13"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "C A RIBEIRO",
+      "valor": "0,00",
+      "numero": "12471",
+      "dataProcessamento": "2026-03-13"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "VITORIA ATACAREJO DISTRIBUIDORA DE ALIMENTOS LTDA",
+      "valor": "0,00",
+      "numero": "7507",
+      "dataProcessamento": "2026-03-13"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BENEDITO S. DA SILVA MERCEARIA LTDA",
+      "valor": "750,00",
+      "numero": "4268",
+      "dataProcessamento": "2026-03-14"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BENEDITO S. DA SILVA MERCEARIA LTDA",
+      "valor": "750,00",
+      "numero": "4269",
+      "dataProcessamento": "2026-03-14"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "0,00",
+      "numero": "7509",
+      "dataProcessamento": "2026-03-16"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "0,00",
+      "numero": "7510",
+      "dataProcessamento": "2026-03-17"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGEM LTDA",
+      "destinatario": "BJ COMERCIO DE SUPERMERCADO LTDA",
+      "valor": "188,24",
+      "numero": "45061",
+      "dataProcessamento": "2026-03-17"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BONTEMPO SUPERMERCADO LTDA",
+      "valor": "1.600,00",
+      "numero": "4311",
+      "dataProcessamento": "2026-03-18"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SB SUPERMERCADO LTDA",
+      "valor": "0,00",
+      "numero": "7518",
+      "dataProcessamento": "2026-03-18"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "VITORIA ATACAREJO DISTRIBUIDORA DE ALIMENTOS LTDA",
+      "valor": "0,00",
+      "numero": "7512",
+      "dataProcessamento": "2026-03-18"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "VITORIA ATACADAO LTDA",
+      "valor": "0,00",
+      "numero": "7513",
+      "dataProcessamento": "2026-03-18"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "REIS COMERCIO E DISTRIBUICAO DE ALIMENTOS LTDA",
+      "valor": "0,00",
+      "numero": "7514",
+      "dataProcessamento": "2026-03-18"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "J E COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "0,00",
+      "numero": "7519",
+      "dataProcessamento": "2026-03-18"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGEM LTDA",
+      "destinatario": "ROBSON SILVA SANTANA613.161.645-00",
+      "valor": "676,48",
+      "numero": "45110",
+      "dataProcessamento": "2026-03-18"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BONTEMPO SUPERMERCADO LTDA",
+      "valor": "2.500,00",
+      "numero": "4312",
+      "dataProcessamento": "2026-03-18"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "640,00",
+      "numero": "7520",
+      "dataProcessamento": "2026-03-19"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "320,00",
+      "numero": "7521",
+      "dataProcessamento": "2026-03-19"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGEM LTDA",
+      "destinatario": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "2.400,00",
+      "numero": "45189",
+      "dataProcessamento": "2026-03-19"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "S N SOARES E CIA LTDA",
+      "valor": "1.600,00",
+      "numero": "7523",
+      "dataProcessamento": "2026-03-20"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "HORTIFRUT GADELHA LTDA",
+      "valor": "2.400,00",
+      "numero": "7530",
+      "dataProcessamento": "2026-03-24"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BENEDITO S. DA SILVA MERCEARIA LTDA",
+      "valor": "750,00",
+      "numero": "4407",
+      "dataProcessamento": "2026-03-24"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BENEDITO S. DA SILVA MERCEARIA LTDA",
+      "valor": "750,00",
+      "numero": "4408",
+      "dataProcessamento": "2026-03-24"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JN COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.600,00",
+      "numero": "7537",
+      "dataProcessamento": "2026-03-25"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "",
+      "valor": "3.200,00",
+      "numero": "4443",
+      "dataProcessamento": "2026-03-25"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BONTEMPO SUPERMERCADO LTDA",
+      "valor": "1.600,00",
+      "numero": "4462",
+      "dataProcessamento": "2026-03-26"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "320,00",
+      "numero": "7539",
+      "dataProcessamento": "2026-03-27"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "640,00",
+      "numero": "7540",
+      "dataProcessamento": "2026-03-27"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "950,00",
+      "numero": "7541",
+      "dataProcessamento": "2026-03-27"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGEM LTDA",
+      "destinatario": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "2.400,00",
+      "numero": "45634",
+      "dataProcessamento": "2026-03-27"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "SUPERMERCADO ESTRELA COMERCIO VAREJISTA",
+      "valor": "640,00",
+      "numero": "4491",
+      "dataProcessamento": "2026-03-27"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "SOBERANA INDUSTRIA E COMERCIO",
+      "destinatario": "FATURA",
+      "valor": "265,00",
+      "numero": "0",
+      "dataProcessamento": "2026-03-28"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "300,00",
+      "numero": "12492",
+      "dataProcessamento": "2026-03-30"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "S N SOARES E CIA LTDA",
+      "valor": "160,00",
+      "numero": "12495",
+      "dataProcessamento": "2026-03-30"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "S N SOARES E CIA LTDA",
+      "valor": "1.600,00",
+      "numero": "12494",
+      "dataProcessamento": "2026-03-30"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "J E COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "160,00",
+      "numero": "12497",
+      "dataProcessamento": "2026-03-30"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "J E COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.600,00",
+      "numero": "12496",
+      "dataProcessamento": "2026-03-30"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "6.000,00",
+      "numero": "12493",
+      "dataProcessamento": "2026-03-30"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "AMARELAO COMERCIO VAREJISTA DE ALIMENTOS LTDA",
+      "valor": "300,00",
+      "numero": "4527",
+      "dataProcessamento": "2026-03-31"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "800,00",
+      "numero": "12506",
+      "dataProcessamento": "2026-03-31"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BENEDITO S. DA SILVA MERCEARIA LTDA",
+      "valor": "750,00",
+      "numero": "4608",
+      "dataProcessamento": "2026-04-02"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BENEDITO S. DA SILVA MERCEARIA LTDA",
+      "valor": "750,00",
+      "numero": "4609",
+      "dataProcessamento": "2026-04-02"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "ARMAZEM LACERDA LTDA",
+      "destinatario": "Não identificado",
+      "valor": "0,00",
+      "numero": "SN",
+      "dataProcessamento": "2026-04-06"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SB SUPERMERCADO LTDA",
+      "valor": "2.400,00",
+      "numero": "7551",
+      "dataProcessamento": "2026-04-06"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "E D PREMIUM COMPANHIA DE ALIMENTOS LTDA",
+      "valor": "340,00",
+      "numero": "7550",
+      "dataProcessamento": "2026-04-06"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "850,00",
+      "numero": "7549",
+      "dataProcessamento": "2026-04-06"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "510,00",
+      "numero": "7548",
+      "dataProcessamento": "2026-04-06"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BONTEMPO SUPERMERCADO LTDA",
+      "valor": "1.600,00",
+      "numero": "4622",
+      "dataProcessamento": "2026-04-06"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGEM LTDA",
+      "destinatario": "BJ COMERCIO DE SUPERMERCADO LTDA",
+      "valor": "340,00",
+      "numero": "45911",
+      "dataProcessamento": "2026-04-06"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JN COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.500,00",
+      "numero": "12508",
+      "dataProcessamento": "2026-04-09"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "S N SOARES E CIA LTDA",
+      "valor": "1.500,00",
+      "numero": "7553",
+      "dataProcessamento": "2026-04-09"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "6.000,00",
+      "numero": "7554",
+      "dataProcessamento": "2026-04-09"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BONTEMPO SUPERMERCADO LTDA",
+      "valor": "7.800,00",
+      "numero": "4664",
+      "dataProcessamento": "2026-04-09"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BONTEMPO SUPERMERCADO LTDA",
+      "valor": "1.700,00",
+      "numero": "4665",
+      "dataProcessamento": "2026-04-09"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "1.020,00",
+      "numero": "7557",
+      "dataProcessamento": "2026-04-09"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "510,00",
+      "numero": "7556",
+      "dataProcessamento": "2026-04-09"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "850,00",
+      "numero": "7558",
+      "dataProcessamento": "2026-04-09"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "300,00",
+      "numero": "12511",
+      "dataProcessamento": "2026-04-09"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BENEDITO S. DA SILVA MERCEARIA LTDA",
+      "valor": "850,00",
+      "numero": "4669",
+      "dataProcessamento": "2026-04-09"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BENEDITO S. DA SILVA MERCEARIA LTDA",
+      "valor": "850,00",
+      "numero": "4670",
+      "dataProcessamento": "2026-04-09"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SB5 SUPERMERCADOS LTDA",
+      "valor": "1.600,00",
+      "numero": "12512",
+      "dataProcessamento": "2026-04-10"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "AMARELAO COMERCIO VAREJISTA DE ALIMENTOS LTDA",
+      "valor": "300,00",
+      "numero": "4718",
+      "dataProcessamento": "2026-04-13"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SB SUPERMERCADO LTDA",
+      "valor": "2.400,00",
+      "numero": "12516",
+      "dataProcessamento": "2026-04-13"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "6.000,00",
+      "numero": "12517",
+      "dataProcessamento": "2026-04-13"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "J E COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.500,00",
+      "numero": "12518",
+      "dataProcessamento": "2026-04-13"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JN COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.500,00",
+      "numero": "12519",
+      "dataProcessamento": "2026-04-13"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "S N SOARES E CIA LTDA",
+      "valor": "1.500,00",
+      "numero": "12520",
+      "dataProcessamento": "2026-04-13"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "VITORIA ATACAREJO DISTRIBUIDORA DE ALIMENTOS LTDA",
+      "valor": "2.250,00",
+      "numero": "7559",
+      "dataProcessamento": "2026-04-14"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "510,00",
+      "numero": "12527",
+      "dataProcessamento": "2026-04-14"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "S.FELIX DISTRIBUIDORA E COMERCIO DE PRODUTOS ALIMENTICIOS",
+      "valor": "16.400,00",
+      "numero": "12528",
+      "dataProcessamento": "2026-04-14"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BONTEMPO SUPERMERCADO LTDA",
+      "valor": "1.600,00",
+      "numero": "4737",
+      "dataProcessamento": "2026-04-15"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "850,00",
+      "numero": "12526",
+      "dataProcessamento": "2026-04-15"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "850,00",
+      "numero": "7563",
+      "dataProcessamento": "2026-04-17"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "Nº 19263",
+      "destinatario": "PE",
+      "valor": "800,00",
+      "numero": "19263",
+      "dataProcessamento": "2026-04-18"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "HORTIFRUT GADELHA LTDA",
+      "valor": "2.400,00",
+      "numero": "12540",
+      "dataProcessamento": "2026-04-21"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JN COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.500,00",
+      "numero": "12541",
+      "dataProcessamento": "2026-04-21"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "E D PREMIUM COMPANHIA DE ALIMENTOS LTDA",
+      "valor": "850,00",
+      "numero": "12542",
+      "dataProcessamento": "2026-04-21"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "J E COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.500,00",
+      "numero": "12543",
+      "dataProcessamento": "2026-04-21"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "6.000,00",
+      "numero": "12544",
+      "dataProcessamento": "2026-04-21"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "S N SOARES E CIA LTDA",
+      "valor": "1.500,00",
+      "numero": "12546",
+      "dataProcessamento": "2026-04-22"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "COMERCIAL M & F CONDIMENTOS E EMBALAGENS LTDA",
+      "valor": "13.620,00",
+      "numero": "12547",
+      "dataProcessamento": "2026-04-22"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "C A RIBEIRO",
+      "valor": "1.600,00",
+      "numero": "12550",
+      "dataProcessamento": "2026-04-22"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGEM LTDA",
+      "destinatario": "BJ COMERCIO DE SUPERMERCADO LTDA",
+      "valor": "340,00",
+      "numero": "46689",
+      "dataProcessamento": "2026-04-23"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGEM LTDA",
+      "destinatario": "AMARELAO COMERCIO VAREJISTA DE ALIMENTOS LTDA",
+      "valor": "320,00",
+      "numero": "46690",
+      "dataProcessamento": "2026-04-23"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "SUPERMERCADO ESTRELA COMERCIO VAREJISTA",
+      "valor": "1.020,00",
+      "numero": "4815",
+      "dataProcessamento": "2026-04-23"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BENEDITO S. DA SILVA MERCEARIA LTDA",
+      "valor": "800,00",
+      "numero": "4861",
+      "dataProcessamento": "2026-04-25"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BENEDITO S. DA SILVA MERCEARIA LTDA",
+      "valor": "800,00",
+      "numero": "4860",
+      "dataProcessamento": "2026-04-25"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "510,00",
+      "numero": "12557",
+      "dataProcessamento": "2026-04-27"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "510,00",
+      "numero": "12560",
+      "dataProcessamento": "2026-04-27"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SB SUPERMERCADO LTDA",
+      "valor": "2.400,00",
+      "numero": "12558",
+      "dataProcessamento": "2026-04-27"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "6.000,00",
+      "numero": "12559",
+      "dataProcessamento": "2026-04-27"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "1.170,00",
+      "numero": "12565",
+      "dataProcessamento": "2026-04-27"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "S N SOARES E CIA LTDA",
+      "valor": "1.500,00",
+      "numero": "12570",
+      "dataProcessamento": "2026-04-29"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JN COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.500,00",
+      "numero": "12572",
+      "dataProcessamento": "2026-04-29"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "J E COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.500,00",
+      "numero": "12584",
+      "dataProcessamento": "2026-04-30"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "680,00",
+      "numero": "12586",
+      "dataProcessamento": "2026-04-30"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "510,00",
+      "numero": "12585",
+      "dataProcessamento": "2026-04-30"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BONTEMPO SUPERMERCADO LTDA",
+      "valor": "2.400,00",
+      "numero": "4956",
+      "dataProcessamento": "2026-04-30"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "AMARELAO COMERCIO VAREJISTA DE ALIMENTOS LTDA",
+      "valor": "320,00",
+      "numero": "4957",
+      "dataProcessamento": "2026-04-30"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "6.000,00",
+      "numero": "12597",
+      "dataProcessamento": "2026-05-06"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "900,00",
+      "numero": "12598",
+      "dataProcessamento": "2026-05-06"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "C A RIBEIRO",
+      "valor": "2.400,00",
+      "numero": "12599",
+      "dataProcessamento": "2026-05-06"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SB SUPERMERCADO LTDA",
+      "valor": "2.400,00",
+      "numero": "12600",
+      "dataProcessamento": "2026-05-06"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "360,00",
+      "numero": "12603",
+      "dataProcessamento": "2026-05-06"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "900,00",
+      "numero": "12604",
+      "dataProcessamento": "2026-05-06"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "J E COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.600,00",
+      "numero": "12388",
+      "dataProcessamento": "2026-05-06"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BENEDITO S. DA SILVA MERCEARIA LTDA",
+      "valor": "800,00",
+      "numero": "5054",
+      "dataProcessamento": "2026-05-07"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BENEDITO S. DA SILVA MERCEARIA LTDA",
+      "valor": "800,00",
+      "numero": "5053",
+      "dataProcessamento": "2026-05-07"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "S N SOARES E CIA LTDA",
+      "valor": "1.500,00",
+      "numero": "12609",
+      "dataProcessamento": "2026-05-07"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JN COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "2.250,00",
+      "numero": "12610",
+      "dataProcessamento": "2026-05-07"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "9.000,00",
+      "numero": "12611",
+      "dataProcessamento": "2026-05-08"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "J E COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "2.250,00",
+      "numero": "12612",
+      "dataProcessamento": "2026-05-08"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "AMARELAO COMERCIO VAREJISTA DE ALIMENTOS LTDA",
+      "valor": "320,00",
+      "numero": "5098",
+      "dataProcessamento": "2026-05-08"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.200,00",
+      "numero": "12622",
+      "dataProcessamento": "2026-05-12"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "S N SOARES E CIA LTDA",
+      "valor": "2.400,00",
+      "numero": "12631",
+      "dataProcessamento": "2026-05-13"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BONTEMPO SUPERMERCADO LTDA",
+      "valor": "2.400,00",
+      "numero": "5208",
+      "dataProcessamento": "2026-05-15"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BONTEMPO SUPERMERCADO LTDA",
+      "valor": "320,00",
+      "numero": "5209",
+      "dataProcessamento": "2026-05-15"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGEM LTDA",
+      "destinatario": "BONTEMPO SUPERMERCADO LTDA",
+      "valor": "510,00",
+      "numero": "47787",
+      "dataProcessamento": "2026-05-15"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "540,00",
+      "numero": "7579",
+      "dataProcessamento": "2026-05-15"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "360,00",
+      "numero": "7580",
+      "dataProcessamento": "2026-05-15"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGEM LTDA",
+      "destinatario": "BJ COMERCIO DE SUPERMERCADO LTDA",
+      "valor": "510,00",
+      "numero": "47794",
+      "dataProcessamento": "2026-05-15"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JN COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.600,00",
+      "numero": "12646",
+      "dataProcessamento": "2026-05-18"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "900,00",
+      "numero": "12648",
+      "dataProcessamento": "2026-05-18"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SB5 SUPERMERCADOS LTDA",
+      "valor": "1.600,00",
+      "numero": "12652",
+      "dataProcessamento": "2026-05-19"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SB SUPERMERCADO LTDA",
+      "valor": "3.200,00",
+      "numero": "12653",
+      "dataProcessamento": "2026-05-19"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BONTEMPO SUPERMERCADO LTDA",
+      "valor": "8.025,00",
+      "numero": "5314",
+      "dataProcessamento": "2026-05-21"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BONTEMPO SUPERMERCADO LTDA",
+      "valor": "10.800,00",
+      "numero": "5315",
+      "dataProcessamento": "2026-05-21"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SERVE BEM SUPERMERCADO LTDA",
+      "valor": "2.550,00",
+      "numero": "12656",
+      "dataProcessamento": "2026-05-21"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "600,00",
+      "numero": "12660",
+      "dataProcessamento": "2026-05-22"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "1.000,00",
+      "numero": "12661",
+      "dataProcessamento": "2026-05-22"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "900,00",
+      "numero": "12662",
+      "dataProcessamento": "2026-05-22"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "SUPERMERCADO ESTRELA COMERCIO VAREJISTA",
+      "valor": "1.800,00",
+      "numero": "5330",
+      "dataProcessamento": "2026-05-22"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BONTEMPO SUPERMERCADO LTDA",
+      "valor": "2.400,00",
+      "numero": "5375",
+      "dataProcessamento": "2026-05-26"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "S N SOARES E CIA LTDA",
+      "valor": "2.400,00",
+      "numero": "12676",
+      "dataProcessamento": "2026-05-26"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "6.400,00",
+      "numero": "12677",
+      "dataProcessamento": "2026-05-26"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JN COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.800,00",
+      "numero": "12709",
+      "dataProcessamento": "2026-06-05"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "900,00",
+      "numero": "12694",
+      "dataProcessamento": "2026-06-05"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "6.400,00",
+      "numero": "12704",
+      "dataProcessamento": "2026-06-05"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "1.000,00",
+      "numero": "12702",
+      "dataProcessamento": "2026-06-05"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "J E COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.600,00",
+      "numero": "12667",
+      "dataProcessamento": "2026-06-05"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "C A RIBEIRO",
+      "valor": "2.400,00",
+      "numero": "12664",
+      "dataProcessamento": "2026-06-05"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "900,00",
+      "numero": "12713",
+      "dataProcessamento": "2026-06-08"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "S N SOARES E CIA LTDA",
+      "valor": "1.800,00",
+      "numero": "12711",
+      "dataProcessamento": "2026-06-08"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "950,00",
+      "numero": "12712",
+      "dataProcessamento": "2026-06-08"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "570,00",
+      "numero": "12714",
+      "dataProcessamento": "2026-06-08"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "AMARELAO COMERCIO VAREJISTA DE ALIMENTOS LTDA",
+      "valor": "380,00",
+      "numero": "5491",
+      "dataProcessamento": "2026-06-09"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BENEDITO S. DA SILVA MERCEARIA LTDA",
+      "valor": "1.520,00",
+      "numero": "5490",
+      "dataProcessamento": "2026-06-09"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "7.200,00",
+      "numero": "12718",
+      "dataProcessamento": "2026-06-09"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "AMARELAO COMERCIO VAREJISTA DE ALIMENTOS LTDA",
+      "valor": "380,00",
+      "numero": "5636",
+      "dataProcessamento": "2026-06-10"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGEM LTDA",
+      "destinatario": "BJ COMERCIO DE SUPERMERCADO LTDA",
+      "valor": "400,00",
+      "numero": "49020",
+      "dataProcessamento": "2026-06-11"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "IDENTIFICAÇÃO E ASSINATURA DO",
+      "destinatario": "CÁLCULO DO IMPOSTO",
+      "valor": "660,00",
+      "numero": "0",
+      "dataProcessamento": "2026-06-11"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SB SUPERMERCADO LTDA",
+      "valor": "2.850,00",
+      "numero": "12729",
+      "dataProcessamento": "2026-06-12"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "C A RIBEIRO",
+      "valor": "2.550,00",
+      "numero": "12730",
+      "dataProcessamento": "2026-06-12"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "J E COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.800,00",
+      "numero": "12731",
+      "dataProcessamento": "2026-06-12"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "AMARELAO COMERCIO VAREJISTA DE ALIMENTOS LTDA",
+      "valor": "350,00",
+      "numero": "5695",
+      "dataProcessamento": "2026-06-13"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BONTEMPO SUPERMERCADO LTDA",
+      "valor": "1.900,00",
+      "numero": "5701",
+      "dataProcessamento": "2026-06-13"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "900,00",
+      "numero": "12738",
+      "dataProcessamento": "2026-06-15"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JN COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "3.600,00",
+      "numero": "12739",
+      "dataProcessamento": "2026-06-15"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "HORTIFRUT GADELHA LTDA",
+      "valor": "2.700,00",
+      "numero": "12743",
+      "dataProcessamento": "2026-06-16"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "7.200,00",
+      "numero": "12746",
+      "dataProcessamento": "2026-06-16"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BENEDITO S. DA SILVA MERCEARIA LTDA",
+      "valor": "950,00",
+      "numero": "5754",
+      "dataProcessamento": "2026-06-16"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BENEDITO S. DA SILVA MERCEARIA LTDA",
+      "valor": "950,00",
+      "numero": "5753",
+      "dataProcessamento": "2026-06-16"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "SUPERMERCADO ESTRELA COMERCIO VAREJISTA",
+      "valor": "1.750,00",
+      "numero": "5755",
+      "dataProcessamento": "2026-06-16"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "S N SOARES E CIA LTDA",
+      "valor": "1.800,00",
+      "numero": "12750",
+      "dataProcessamento": "2026-06-17"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "900,00",
+      "numero": "12759",
+      "dataProcessamento": "2026-06-18"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "950,00",
+      "numero": "12760",
+      "dataProcessamento": "2026-06-18"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "760,00",
+      "numero": "12764",
+      "dataProcessamento": "2026-06-19"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "AMARELAO COMERCIO VAREJISTA DE ALIMENTOS LTDA",
+      "valor": "380,00",
+      "numero": "5812",
+      "dataProcessamento": "2026-06-19"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "540,00",
+      "numero": "12805",
+      "dataProcessamento": "2026-06-30"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "540,00",
+      "numero": "12804",
+      "dataProcessamento": "2026-06-30"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JN COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.800,00",
+      "numero": "12785",
+      "dataProcessamento": "2026-06-30"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "900,00",
+      "numero": "12787",
+      "dataProcessamento": "2026-06-30"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "S N SOARES E CIA LTDA",
+      "valor": "1.800,00",
+      "numero": "12771",
+      "dataProcessamento": "2026-06-30"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "11.700,00",
+      "numero": "12773",
+      "dataProcessamento": "2026-06-30"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SB5 SUPERMERCADOS LTDA",
+      "valor": "1.900,00",
+      "numero": "12772",
+      "dataProcessamento": "2026-06-30"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "J E COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.800,00",
+      "numero": "12776",
+      "dataProcessamento": "2026-06-30"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BONTEMPO SUPERMERCADO LTDA",
+      "valor": "2.700,00",
+      "numero": "5904",
+      "dataProcessamento": "2026-06-30"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BENEDITO S. DA SILVA MERCEARIA LTDA",
+      "valor": "1.800,00",
+      "numero": "5905",
+      "dataProcessamento": "2026-06-30"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "S N SOARES E CIA LTDA",
+      "valor": "1.800,00",
+      "numero": "12905",
+      "dataProcessamento": "2026-07-24"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BENEDITO S. DA SILVA MERCEARIA LTDA",
+      "valor": "900,00",
+      "numero": "6428",
+      "dataProcessamento": "2026-07-24"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BENEDITO S. DA SILVA MERCEARIA LTDA",
+      "valor": "900,00",
+      "numero": "6429",
+      "dataProcessamento": "2026-07-24"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "850,00",
+      "numero": "12895",
+      "dataProcessamento": "2026-07-24"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "8.100,00",
+      "numero": "12888",
+      "dataProcessamento": "2026-07-24"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "SUPERMERCADO ESTRELA COMERCIO VAREJISTA",
+      "valor": "1.800,00",
+      "numero": "6331",
+      "dataProcessamento": "2026-07-24"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JN COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.800,00",
+      "numero": "12899",
+      "dataProcessamento": "2026-07-24"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "900,00",
+      "numero": "12887",
+      "dataProcessamento": "2026-07-24"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SB SUPERMERCADO LTDA",
+      "valor": "2.850,00",
+      "numero": "12882",
+      "dataProcessamento": "2026-07-24"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "900,00",
+      "numero": "12857",
+      "dataProcessamento": "2026-07-24"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGEM LTDA",
+      "destinatario": "BJ COMERCIO DE SUPERMERCADO LTDA",
+      "valor": "570,00",
+      "numero": "50699",
+      "dataProcessamento": "2026-07-24"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "AMARELAO COMERCIO VAREJISTA DE ALIMENTOS LTDA",
+      "valor": "380,00",
+      "numero": "6420",
+      "dataProcessamento": "2026-07-25"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "S N SOARES E CIA LTDA",
+      "valor": "1.800,00",
+      "numero": "12909",
+      "dataProcessamento": "2026-07-27"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SB5 SUPERMERCADOS LTDA",
+      "valor": "1.900,00",
+      "numero": "12910",
+      "dataProcessamento": "2026-07-27"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BONTEMPO SUPERMERCADO LTDA",
+      "valor": "2.700,00",
+      "numero": "6328",
+      "dataProcessamento": "2026-07-28"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "11.700,00",
+      "numero": "12939",
+      "dataProcessamento": "2026-08-04"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "900,00",
+      "numero": "12940",
+      "dataProcessamento": "2026-08-04"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "400,00",
+      "numero": "12941",
+      "dataProcessamento": "2026-08-04"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "1.000,00",
+      "numero": "12942",
+      "dataProcessamento": "2026-08-04"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SB SUPERMERCADO LTDA",
+      "valor": "1.900,00",
+      "numero": "12943",
+      "dataProcessamento": "2026-08-05"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SB SUPERMERCADO LTDA",
+      "valor": "1.900,00",
+      "numero": "12924",
+      "dataProcessamento": "2026-08-05"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "380,00",
+      "numero": "12922",
+      "dataProcessamento": "2026-08-05"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BONTEMPO SUPERMERCADO LTDA",
+      "valor": "1.900,00",
+      "numero": "6591",
+      "dataProcessamento": "2026-08-05"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "J E COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.800,00",
+      "numero": "12946",
+      "dataProcessamento": "2026-08-06"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "S N SOARES E CIA LTDA",
+      "valor": "1.800,00",
+      "numero": "12947",
+      "dataProcessamento": "2026-08-07"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "C A RIBEIRO",
+      "valor": "2.700,00",
+      "numero": "12948",
+      "dataProcessamento": "2026-08-07"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "1.000,00",
+      "numero": "12950",
+      "dataProcessamento": "2026-08-07"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "800,00",
+      "numero": "12951",
+      "dataProcessamento": "2026-08-07"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JN COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.800,00",
+      "numero": "12952",
+      "dataProcessamento": "2026-08-10"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "8.100,00",
+      "numero": "12953",
+      "dataProcessamento": "2026-08-10"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SB SUPERMERCADO LTDA",
+      "valor": "2.850,00",
+      "numero": "12954",
+      "dataProcessamento": "2026-08-10"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BONTEMPO SUPERMERCADO LTDA",
+      "valor": "950,00",
+      "numero": "6603",
+      "dataProcessamento": "2026-08-11"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "",
+      "valor": "3.200,00",
+      "numero": "6662",
+      "dataProcessamento": "2026-08-11"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BONTEMPO SUPERMERCADO LTDA",
+      "valor": "1.900,00",
+      "numero": "6704",
+      "dataProcessamento": "2026-08-11"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "E D PREMIUM COMPANHIA DE ALIMENTOS LTDA",
+      "valor": "380,00",
+      "numero": "12959",
+      "dataProcessamento": "2026-08-12"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "E D PREMIUM COMPANHIA DE ALIMENTOS LTDA",
+      "valor": "380,00",
+      "numero": "12960",
+      "dataProcessamento": "2026-08-12"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "SUPERMERCADO ESTRELA COMERCIO VAREJISTA",
+      "valor": "1.800,00",
+      "numero": "6805",
+      "dataProcessamento": "2026-08-14"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "J E COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.800,00",
+      "numero": "12966",
+      "dataProcessamento": "2026-08-14"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "C A RIBEIRO",
+      "valor": "2.850,00",
+      "numero": "12817",
+      "dataProcessamento": "2026-08-14"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BONTEMPO SUPERMERCADO LTDA",
+      "valor": "1.900,00",
+      "numero": "6819",
+      "dataProcessamento": "2026-08-14"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "AMARELAO COMERCIO VAREJISTA DE ALIMENTOS LTDA",
+      "valor": "360,00",
+      "numero": "6818",
+      "dataProcessamento": "2026-08-14"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "12.600,00",
+      "numero": "12881",
+      "dataProcessamento": "2026-08-16"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "900,00",
+      "numero": "12923",
+      "dataProcessamento": "2026-08-16"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "E D PREMIUM COMPANHIA DE ALIMENTOS LTDA",
+      "valor": "400,00",
+      "numero": "12968",
+      "dataProcessamento": "2026-08-17"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "950,00",
+      "numero": "12969",
+      "dataProcessamento": "2026-08-17"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "8.100,00",
+      "numero": "12971",
+      "dataProcessamento": "2026-08-17"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "950,00",
+      "numero": "12972",
+      "dataProcessamento": "2026-08-17"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JN COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.800,00",
+      "numero": "12975",
+      "dataProcessamento": "2026-08-18"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "S N SOARES E CIA LTDA",
+      "valor": "1.800,00",
+      "numero": "12976",
+      "dataProcessamento": "2026-08-18"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "570,00",
+      "numero": "12980",
+      "dataProcessamento": "2026-08-20"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "800,00",
+      "numero": "12981",
+      "dataProcessamento": "2026-08-21"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "570,00",
+      "numero": "12982",
+      "dataProcessamento": "2026-08-24"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "DESTAK EMBALAGENS LTDA",
+      "destinatario": "BENEDITO S. DA SILVA MERCEARIA LTDA",
+      "valor": "1.900,00",
+      "numero": "6957",
+      "dataProcessamento": "2026-08-24"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SB5 SUPERMERCADOS LTDA",
+      "valor": "1.900,00",
+      "numero": "12985",
+      "dataProcessamento": "2026-08-25"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "800,00",
+      "numero": "12990",
+      "dataProcessamento": "2026-08-26"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "FRUTOS DA TERRA MINIMERCADO LTDA",
+      "valor": "600,00",
+      "numero": "12994",
+      "dataProcessamento": "2026-08-27"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "J E COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.800,00",
+      "numero": "12995",
+      "dataProcessamento": "2026-08-27"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SUPERMERCADO REGENTE LTDA",
+      "valor": "800,00",
+      "numero": "12999",
+      "dataProcessamento": "2026-08-28"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "9.900,00",
+      "numero": "13002",
+      "dataProcessamento": "2026-08-31"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "S N SOARES E CIA LTDA",
+      "valor": "2.700,00",
+      "numero": "13003",
+      "dataProcessamento": "2026-08-31"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "SB SUPERMERCADO LTDA",
+      "valor": "2.850,00",
+      "numero": "13004",
+      "dataProcessamento": "2026-09-02"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "C A RIBEIRO",
+      "valor": "2.850,00",
+      "numero": "13005",
+      "dataProcessamento": "2026-09-03"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JN COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.800,00",
+      "numero": "13006",
+      "dataProcessamento": "2026-09-03"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "S N SOARES E CIA LTDA",
+      "valor": "2.700,00",
+      "numero": "7686",
+      "dataProcessamento": "2026-09-09"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "JNS COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "11.700,00",
+      "numero": "7685",
+      "dataProcessamento": "2026-09-09"
+    },
+    {
+      "tipo": "DANFE",
+      "emitente": "COMERCIAL PATY IMPORTACAO LTDA",
+      "destinatario": "J E COMERCIO DE PRODUTOS ALIMENTICIOS LTDA",
+      "valor": "1.800,00",
+      "numero": "13016",
+      "dataProcessamento": "2026-09-09"
+    }
+  ]
+}

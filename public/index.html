@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel - Menino do Alho</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f0f4f0;
+            color: #1a1a1a;
+            min-height: 100vh;
+        }
+
+        header {
+            background: linear-gradient(135deg, #2d6a2e, #3a8c3c);
+            color: #fff;
+            padding: 24px 0;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,.15);
+        }
+        header h1 { font-size: 1.8rem; font-weight: 700; letter-spacing: -0.5px; }
+        header p  { opacity: .8; margin-top: 4px; font-size: .95rem; }
+
+        .container { max-width: 740px; margin: 0 auto; padding: 28px 16px; }
+
+        /* ---------- Cards ---------- */
+        .cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 28px; }
+
+        .card {
+            background: #fff;
+            border-radius: 14px;
+            padding: 22px;
+            box-shadow: 0 2px 12px rgba(0,0,0,.06);
+            text-align: center;
+            transition: transform .15s, box-shadow .15s;
+            border-top: 4px solid #ccc;
+            position: relative;
+        }
+        .card:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,.1); }
+        .card.online  { border-top-color: #2d6a2e; }
+        .card.offline { border-top-color: #c0392b; }
+        .card.errored { border-top-color: #e67e22; }
+
+        .card .icon { font-size: 2.4rem; margin-bottom: 8px; }
+        .card .nome { font-weight: 600; font-size: 1rem; margin-bottom: 6px; }
+
+        .card .badge {
+            display: inline-block;
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: .82rem;
+            font-weight: 600;
+            color: #fff;
+        }
+        .badge.on  { background: #2d6a2e; }
+        .badge.off { background: #c0392b; }
+        .badge.err { background: #e67e22; }
+
+        /* Badge de estado real do celular WhatsApp */
+        #badge-celular {
+            display: inline-block;
+            margin-top: 6px;
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: .82rem;
+            font-weight: 600;
+            color: #fff;
+            transition: background .4s;
+        }
+        #badge-celular.cel-conectado    { background: #16a34a; }
+        #badge-celular.cel-iniciando    { background: #d97706; }
+        #badge-celular.cel-qr           { background: #2563eb; }
+        #badge-celular.cel-desconectado { background: #c0392b; }
+
+        /* QR Code no painel */
+        #qr-container {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 14px;
+            gap: 6px;
+        }
+        #qr-container.visivel { display: flex; }
+        #wa-qrcode {
+            width: 180px;
+            height: 180px;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(0,0,0,.12);
+            border: 3px solid #2563eb;
+        }
+        #qr-aguardando {
+            font-size: .75rem;
+            color: #2563eb;
+            font-weight: 600;
+            animation: pisca 1.2s ease-in-out infinite;
+        }
+        @keyframes pisca {
+            0%, 100% { opacity: 1; }
+            50% { opacity: .4; }
+        }
+
+        .card .meta {
+            margin-top: 10px;
+            font-size: .78rem;
+            color: #777;
+            line-height: 1.5;
+        }
+
+        /* Botões individuais dentro dos cards */
+        .card-acoes {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 14px;
+        }
+        .card-btn {
+            padding: 5px 14px;
+            border: none;
+            border-radius: 8px;
+            font-size: .75rem;
+            font-weight: 700;
+            cursor: pointer;
+            color: #fff;
+            transition: opacity .15s, transform .1s;
+        }
+        .card-btn:active { transform: scale(.95); }
+        .card-btn:disabled { opacity: .4; cursor: not-allowed; }
+        .card-btn.cb-start   { background: #2d6a2e; }
+        .card-btn.cb-stop    { background: #c0392b; }
+        .card-btn.cb-restart { background: #d4820a; }
+
+        /* Contador de ficheiros */
+        .file-count {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            margin-top: 12px;
+            padding: 5px 12px;
+            border-radius: 8px;
+            background: #edf7ed;
+            border: 1px solid #c8e6c9;
+            font-size: .78rem;
+            font-weight: 600;
+            color: #2d6a2e;
+        }
+        .file-count .num {
+            background: #2d6a2e;
+            color: #fff;
+            border-radius: 6px;
+            padding: 1px 7px;
+            font-size: .75rem;
+            min-width: 22px;
+            text-align: center;
+        }
+
+        /* ---------- Botões ---------- */
+        .acoes { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-bottom: 28px; }
+
+        .btn {
+            padding: 16px;
+            border: none;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background .2s, transform .1s;
+            color: #fff;
+        }
+        .btn:active { transform: scale(.97); }
+        .btn:disabled { opacity: .5; cursor: not-allowed; }
+
+        .btn-ligar     { background: #2d6a2e; }
+        .btn-ligar:hover:not(:disabled) { background: #245a25; }
+        .btn-reiniciar { background: #d4820a; }
+        .btn-reiniciar:hover:not(:disabled) { background: #b86f08; }
+        .btn-parar     { background: #c0392b; grid-column: 1 / -1; }
+        .btn-parar:hover:not(:disabled) { background: #a33025; }
+
+        /* ---------- Botão iCloud ---------- */
+        .icloud-section {
+            margin-bottom: 28px;
+        }
+        .btn-icloud {
+            width: 100%;
+            padding: 16px;
+            border: 2px solid #0071e3;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            color: #0071e3;
+            background: #fff;
+            transition: all .2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .btn-icloud:hover:not(:disabled) {
+            background: #0071e3;
+            color: #fff;
+        }
+        .btn-icloud:active { transform: scale(.97); }
+        .btn-icloud:disabled { opacity: .5; cursor: not-allowed; }
+        .btn-icloud .icloud-icon { font-size: 1.3rem; }
+
+        .btn-reconstruir {
+            width: 100%;
+            padding: 16px;
+            border: 2px solid #d4820a;
+            border-radius: 12px;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            color: #d4820a;
+            background: #fff;
+            transition: all .2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 12px;
+        }
+        .btn-reconstruir:hover:not(:disabled) {
+            background: #d4820a;
+            color: #fff;
+        }
+        .btn-reconstruir:active { transform: scale(.97); }
+        .btn-reconstruir:disabled { opacity: .5; cursor: not-allowed; }
+
+        /* ---------- Lista de Ficheiros ---------- */
+        .files-section {
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 2px 12px rgba(0,0,0,.06);
+            margin-bottom: 28px;
+            overflow: hidden;
+        }
+        .files-section h2 {
+            font-size: .95rem;
+            font-weight: 700;
+            padding: 16px 20px 0;
+            color: #1a1a1a;
+        }
+        .files-list {
+            max-height: 320px;
+            overflow-y: auto;
+            padding: 10px 20px 16px;
+        }
+        .files-list::-webkit-scrollbar { width: 5px; }
+        .files-list::-webkit-scrollbar-thumb { background: #c8e6c9; border-radius: 4px; }
+
+        .file-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 9px 0;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: .82rem;
+        }
+        .file-item:last-child { border-bottom: none; }
+
+        .file-item .fi-icon {
+            flex-shrink: 0;
+            width: 30px; height: 30px;
+            background: #edf7ed;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: .85rem;
+        }
+        .file-item .fi-nome {
+            flex: 1;
+            font-weight: 500;
+            color: #333;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        .file-item .fi-data {
+            flex-shrink: 0;
+            font-size: .72rem;
+            color: #999;
+        }
+        .files-empty {
+            text-align: center;
+            padding: 28px 0;
+            color: #aaa;
+            font-size: .85rem;
+        }
+
+        /* ---------- Gestão Financeira ---------- */
+        .fin-section {
+            background: #fff;
+            border-radius: 14px;
+            box-shadow: 0 2px 12px rgba(0,0,0,.06);
+            margin-bottom: 28px;
+            overflow: hidden;
+        }
+        .fin-header {
+            padding: 18px 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .fin-header h2 {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #1a1a1a;
+            margin: 0;
+        }
+        .fin-resumo {
+            display: flex;
+            gap: 10px;
+        }
+        .fin-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: .75rem;
+            font-weight: 600;
+        }
+        .fin-pill.boletos { background: #fff3e0; color: #e65100; }
+        .fin-pill.notas   { background: #e3f2fd; color: #1565c0; }
+
+        .fin-pesquisa {
+            width: 100%;
+            padding: 12px 16px;
+            margin: 14px 20px 0;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: .88rem;
+            outline: none;
+            transition: border-color .2s;
+            box-sizing: border-box;
+            width: calc(100% - 40px);
+        }
+        .fin-pesquisa:focus { border-color: #2d6a2e; }
+
+        .fin-tabs {
+            display: flex;
+            gap: 0;
+            margin: 16px 20px 0;
+            border-bottom: 2px solid #eee;
+        }
+        .fin-tab {
+            padding: 10px 20px;
+            font-size: .85rem;
+            font-weight: 600;
+            cursor: pointer;
+            color: #888;
+            border-bottom: 2px solid transparent;
+            margin-bottom: -2px;
+            transition: all .2s;
+            background: none;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+        .fin-tab:hover { color: #333; }
+        .fin-tab.active { color: #2d6a2e; border-bottom-color: #2d6a2e; }
+
+        .fin-tabela-wrap {
+            overflow-x: auto;
+            padding: 0 20px 16px;
+            max-height: 420px;
+            overflow-y: auto;
+        }
+        .fin-tabela-wrap::-webkit-scrollbar { width: 5px; height: 5px; }
+        .fin-tabela-wrap::-webkit-scrollbar-thumb { background: #c8e6c9; border-radius: 4px; }
+
+        .fin-tabela {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: .8rem;
+            margin-top: 10px;
+        }
+        .fin-tabela th {
+            text-align: left;
+            padding: 10px 8px;
+            font-size: .72rem;
+            text-transform: uppercase;
+            letter-spacing: .5px;
+            color: #888;
+            border-bottom: 2px solid #eee;
+            white-space: nowrap;
+            position: sticky;
+            top: 0;
+            background: #fff;
+        }
+        .fin-tabela td {
+            padding: 10px 8px;
+            border-bottom: 1px solid #f5f5f5;
+            color: #333;
+        }
+        .fin-tabela tr.clicavel { cursor: pointer; transition: background .15s; }
+        .fin-tabela tr.clicavel:hover td { background: #e8f5e9; }
+        .fin-tabela tr.hidden { display: none; }
+
+        .fin-tipo {
+            display: inline-block;
+            padding: 2px 8px;
+            border-radius: 6px;
+            font-size: .7rem;
+            font-weight: 700;
+        }
+        .fin-tipo.boleto { background: #fff3e0; color: #e65100; }
+        .fin-tipo.nf     { background: #e3f2fd; color: #1565c0; }
+
+        .fin-valor { font-weight: 600; white-space: nowrap; }
+        .fin-venc  { white-space: nowrap; }
+        .fin-empty {
+            text-align: center;
+            padding: 30px 0;
+            color: #aaa;
+            font-size: .85rem;
+        }
+
+        /* ---------- Terminal de Logs ---------- */
+        .logs-section {
+            background: #1e1e1e;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,.2);
+            margin-bottom: 20px;
+        }
+
+        .logs-header {
+            background: #2a2a2a;
+            padding: 10px 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .logs-header .dot { width: 11px; height: 11px; border-radius: 50%; }
+        .dot.red    { background: #ff5f57; }
+        .dot.yellow { background: #febc2e; }
+        .dot.green  { background: #28c840; }
+        .logs-header span {
+            flex: 1;
+            text-align: center;
+            color: #888;
+            font-size: .8rem;
+            font-weight: 500;
+        }
+
+        .logs-body { display: grid; grid-template-columns: 1fr 1fr; min-height: 180px; }
+
+        .log-panel {
+            padding: 12px 14px;
+            border-right: 1px solid #2a2a2a;
+            overflow: hidden;
+        }
+        .log-panel:last-child { border-right: none; }
+
+        .log-panel h3 {
+            color: #6bdf6b;
+            font-size: .72rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+
+        .log-panel pre {
+            color: #ccc;
+            font-family: 'SF Mono', 'Menlo', 'Consolas', monospace;
+            font-size: .72rem;
+            line-height: 1.55;
+            white-space: pre-wrap;
+            word-break: break-all;
+            margin: 0;
+        }
+
+        .log-pulse {
+            display: inline-block;
+            width: 6px; height: 6px;
+            background: #28c840;
+            border-radius: 50%;
+            margin-left: 6px;
+            animation: pulse 1.5s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: .3; }
+        }
+
+        /* ---------- Toast ---------- */
+        .toast {
+            position: fixed;
+            bottom: 24px;
+            left: 50%;
+            transform: translateX(-50%) translateY(80px);
+            background: #333;
+            color: #fff;
+            padding: 12px 28px;
+            border-radius: 10px;
+            font-size: .9rem;
+            opacity: 0;
+            transition: all .35s;
+            z-index: 99;
+            pointer-events: none;
+        }
+        .toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
+
+        footer {
+            text-align: center;
+            padding: 16px;
+            font-size: .75rem;
+            color: #999;
+        }
+
+        @media (max-width: 520px) {
+            .cards, .acoes { grid-template-columns: 1fr; }
+            .btn-parar { grid-column: auto; }
+            .logs-body { grid-template-columns: 1fr; }
+            .log-panel { border-right: none; border-bottom: 1px solid #2a2a2a; }
+            .log-panel:last-child { border-bottom: none; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🧄 Menino do Alho</h1>
+    <p>Painel de Controle Local</p>
+</header>
+
+<div class="container">
+    <!-- Cards de Status -->
+    <div class="cards">
+        <div class="card" id="card-alho">
+            <div class="icon">📱</div>
+            <div class="nome">WhatsApp</div>
+            <span class="badge off" id="badge-alho">Verificando...</span>
+            <br>
+            <span class="cel-desconectado" id="badge-celular">❌ Desconectado</span>
+            <div id="qr-container">
+                <img id="wa-qrcode" src="" alt="QR Code WhatsApp" />
+                <span id="qr-aguardando">📷 Aponte a câmera do celular...</span>
+            </div>
+            <div class="meta" id="meta-alho"></div>
+            <div class="card-acoes" id="acoes-alho"></div>
+        </div>
+        <div class="card" id="card-site">
+            <div class="icon">📤</div>
+            <div class="nome">Upload Python</div>
+            <span class="badge off" id="badge-site">Verificando...</span>
+            <div class="meta" id="meta-site"></div>
+            <div class="card-acoes" id="acoes-site"></div>
+            <div class="file-count">
+                📁 Enviados: <span class="num" id="contagem-enviados">-</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botões de Ação -->
+    <div class="acoes">
+        <button class="btn btn-ligar" onclick="acao('/ligar', this)">▶ Ligar Sistema</button>
+        <button class="btn btn-reiniciar" onclick="acao('/reiniciar', this)">🔄 Reiniciar</button>
+        <button class="btn btn-parar" onclick="acao('/parar', this)">⏹ Parar Tudo</button>
+    </div>
+
+    <!-- Backup iCloud + Reconstruir -->
+    <div class="icloud-section">
+        <button class="btn-icloud" id="btn-icloud" onclick="forcarBackup()">
+            <span class="icloud-icon">☁️</span>
+            Sincronizar Backup iCloud
+        </button>
+        <button class="btn-reconstruir" id="btn-reconstruir" onclick="reconstruirHistorico()">
+            🔄 Reconstruir Histórico (Ler PDFs Antigos)
+        </button>
+        <button onclick="executarLimpezaNuclear()" style="background-color: #d97706; color: white; font-weight: bold; padding: 12px 20px; border-radius: 8px; border: none; cursor: pointer; width: 100%; margin-top: 15px; font-size: 16px; display: flex; justify-content: center; align-items: center; gap: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+            🔄 Reinicialização Segura do Bot
+        </button>
+    </div>
+
+    <!-- Lista de Ficheiros Enviados -->
+    <div class="files-section">
+        <h2>📄 Últimos Ficheiros Enviados</h2>
+        <div class="files-list" id="files-list">
+            <div class="files-empty">A carregar...</div>
+        </div>
+    </div>
+
+    <!-- Gestão Financeira -->
+    <div class="fin-section">
+        <div class="fin-header">
+            <h2>📊 Gestão Financeira</h2>
+            <div class="fin-resumo">
+                <span class="fin-pill boletos">📋 Boletos: <strong id="fin-total-boletos">0</strong></span>
+                <span class="fin-pill notas">📄 Notas: <strong id="fin-total-notas">0</strong></span>
+            </div>
+        </div>
+
+        <input type="text" id="pesquisaFinanceiro"
+               class="fin-pesquisa"
+               placeholder="🔍 Pesquisar por número da nota, empresa, valor...">
+
+        <div class="fin-tabs">
+            <button class="fin-tab active" onclick="trocarTab('boletos', this)">📋 Boletos</button>
+            <button class="fin-tab" onclick="trocarTab('notas', this)">📄 Notas Fiscais</button>
+        </div>
+
+        <!-- Tabela Boletos -->
+        <div class="fin-tabela-wrap" id="wrap-boletos">
+            <table class="fin-tabela">
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Beneficiário</th>
+                        <th>Valor</th>
+                        <th>Vencimento</th>
+                        <th>NF</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-boletos">
+                    <tr><td colspan="5" class="fin-empty">A carregar...</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Tabela Notas -->
+        <div class="fin-tabela-wrap" id="wrap-notas" style="display:none;">
+            <table class="fin-tabela">
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Emitente</th>
+                        <th>Destinatário</th>
+                        <th>Valor</th>
+                        <th>NF</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-notas">
+                    <tr><td colspan="5" class="fin-empty">A carregar...</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <!-- Terminal de Logs -->
+    <div class="logs-section">
+        <div class="logs-header">
+            <div class="dot red"></div>
+            <div class="dot yellow"></div>
+            <div class="dot green"></div>
+            <span>Terminal — Logs ao Vivo <span class="log-pulse"></span></span>
+        </div>
+        <div class="logs-body">
+            <div class="log-panel">
+                <h3>📱 bot-alho</h3>
+                <pre id="log-alho">Aguardando logs...</pre>
+            </div>
+            <div class="log-panel">
+                <h3>📤 bot-site</h3>
+                <pre id="log-site">Aguardando logs...</pre>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="toast" id="toast"></div>
+<footer>Painel local — porta 3030</footer>
+
+<script>
+function mostrarToast(msg) {
+    const t = document.getElementById('toast');
+    t.textContent = msg;
+    t.classList.add('show');
+    setTimeout(() => t.classList.remove('show'), 3000);
+}
+
+function tempoAtivo(uptime) {
+    if (!uptime) return '';
+    const diff = Date.now() - uptime;
+    const min = Math.floor(diff / 60000);
+    if (min < 60) return `Ativo há ${min}min`;
+    const h = Math.floor(min / 60);
+    if (h < 24) return `Ativo há ${h}h ${min % 60}min`;
+    return `Ativo há ${Math.floor(h / 24)}d ${h % 24}h`;
+}
+
+const BOT_NAMES = { alho: 'bot-alho', site: 'bot-site' };
+
+function atualizarCard(id, bot) {
+    const card  = document.getElementById(`card-${id}`);
+    const badge = document.getElementById(`badge-${id}`);
+    const meta  = document.getElementById(`meta-${id}`);
+    const acoes = document.getElementById(`acoes-${id}`);
+
+    const online = bot.status === 'online';
+    const erro   = bot.status === 'errored' || bot.status === 'stopping';
+
+    card.className  = `card ${online ? 'online' : erro ? 'errored' : 'offline'}`;
+    badge.className = `badge ${online ? 'on' : erro ? 'err' : 'off'}`;
+    badge.textContent = online ? 'Ligado 🟢' : erro ? 'Erro ⚠️' : 'Desligado 🔴';
+
+    let info = '';
+    if (online) {
+        info = `CPU: ${bot.cpu}% · RAM: ${bot.memoria}MB`;
+        const t = tempoAtivo(bot.uptime);
+        if (t) info += `<br>${t}`;
+    }
+    meta.innerHTML = info;
+
+    const nome = BOT_NAMES[id];
+    if (online || erro) {
+        acoes.innerHTML =
+            `<button class="card-btn cb-stop" onclick="comandoBot('${nome}','stop',this)">⏹ Parar</button>` +
+            `<button class="card-btn cb-restart" onclick="comandoBot('${nome}','restart',this)">🔄 Reiniciar</button>`;
+    } else {
+        acoes.innerHTML =
+            `<button class="card-btn cb-start" onclick="comandoBot('${nome}','start',this)">▶ Ligar</button>`;
+    }
+}
+
+async function comandoBot(bot, acao, btn) {
+    btn.disabled = true;
+    btn.textContent = '⏳';
+    try {
+        const res = await fetch('/comando', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ bot, acao })
+        });
+        const data = await res.json();
+        mostrarToast(data.mensagem || data.erro || 'Feito!');
+    } catch {
+        mostrarToast('Erro de conexão.');
+    }
+    setTimeout(buscarStatus, 1500);
+}
+
+async function buscarStatus() {
+    try {
+        const res = await fetch('/status');
+        const data = await res.json();
+        atualizarCard('alho', data.bots['bot-alho']);
+        atualizarCard('site', data.bots['bot-site']);
+    } catch {
+        ['alho', 'site'].forEach(id => {
+            document.getElementById(`card-${id}`).className = 'card offline';
+            document.getElementById(`badge-${id}`).className = 'badge off';
+            document.getElementById(`badge-${id}`).textContent = 'Sem conexão 🔴';
+            document.getElementById(`meta-${id}`).innerHTML = '';
+        });
+    }
+}
+
+async function buscarLogs() {
+    try {
+        const res = await fetch('/logs');
+        const data = await res.json();
+        if (data.ok) {
+            document.getElementById('log-alho').textContent = data.logs['bot-alho'] || '(vazio)';
+            document.getElementById('log-site').textContent = data.logs['bot-site'] || '(vazio)';
+        }
+    } catch {
+        document.getElementById('log-alho').textContent = '(sem conexão)';
+        document.getElementById('log-site').textContent = '(sem conexão)';
+    }
+}
+
+async function buscarContagem() {
+    try {
+        const res = await fetch('/contagem');
+        const data = await res.json();
+        document.getElementById('contagem-enviados').textContent = data.total;
+    } catch {
+        document.getElementById('contagem-enviados').textContent = '-';
+    }
+}
+
+function formatarDataFicheiro(iso) {
+    const d = new Date(iso);
+    const pad = n => String(n).padStart(2, '0');
+    return `${pad(d.getDate())}/${pad(d.getMonth()+1)} ${pad(d.getHours())}:${pad(d.getMinutes())}`;
+}
+
+async function buscarArquivos() {
+    const container = document.getElementById('files-list');
+    try {
+        const res = await fetch('/arquivos-enviados');
+        const data = await res.json();
+        if (!data.ok || data.arquivos.length === 0) {
+            container.innerHTML = '<div class="files-empty">Nenhum ficheiro enviado ainda.</div>';
+            return;
+        }
+        container.innerHTML = data.arquivos.map(f =>
+            `<div class="file-item">` +
+            `<div class="fi-icon">📎</div>` +
+            `<div class="fi-nome" title="${f.nome}">${f.nome}</div>` +
+            `<div class="fi-data">${formatarDataFicheiro(f.data)}</div>` +
+            `</div>`
+        ).join('');
+    } catch {
+        container.innerHTML = '<div class="files-empty">Sem conexão com o painel.</div>';
+    }
+}
+
+async function acao(rota, btn) {
+    btn.disabled = true;
+    btn.textContent = '⏳ Aguarde...';
+    try {
+        const res = await fetch(rota, { method: 'POST' });
+        const data = await res.json();
+        mostrarToast(data.mensagem || data.erro || 'Feito!');
+        setTimeout(() => { buscarStatus(); buscarLogs(); }, 2000);
+    } catch {
+        mostrarToast('Erro de conexão com o painel.');
+    }
+    setTimeout(() => {
+        btn.disabled = false;
+        if (rota === '/ligar')     btn.textContent = '▶ Ligar Sistema';
+        if (rota === '/reiniciar') btn.textContent = '🔄 Reiniciar';
+        if (rota === '/parar')     btn.textContent = '⏹ Parar Tudo';
+    }, 3000);
+}
+
+async function forcarBackup() {
+    const btn = document.getElementById('btn-icloud');
+    const textoOriginal = btn.innerHTML;
+    btn.disabled = true;
+    btn.innerHTML = '<span class="icloud-icon">⏳</span> Sincronizando...';
+
+    try {
+        const res = await fetch('/forcar-backup', { method: 'POST' });
+        const data = await res.json();
+        if (data.ok) {
+            mostrarToast(data.mensagem);
+        } else {
+            mostrarToast('Erro: ' + (data.erro || 'Falha desconhecida.'));
+        }
+    } catch {
+        mostrarToast('Erro de conexão com o painel.');
+    }
+
+    setTimeout(() => {
+        btn.disabled = false;
+        btn.innerHTML = textoOriginal;
+    }, 3000);
+}
+
+async function reconstruirHistorico() {
+    const btn = document.getElementById('btn-reconstruir');
+    btn.disabled = true;
+    btn.textContent = '⏳ Iniciando Máquina do Tempo...';
+
+    try {
+        const res = await fetch('/reconstruir-historico', { method: 'POST' });
+        const data = await res.json();
+        if (data.ok) {
+            mostrarToast(data.mensagem);
+            alert('Reconstrução iniciada! Como são muitos ficheiros, o robô vai ler os PDFs em segundo plano. Pode acompanhar o progresso no terminal.');
+        } else {
+            mostrarToast('Erro: ' + (data.erro || 'Falha desconhecida.'));
+        }
+    } catch {
+        mostrarToast('Erro de conexão com o painel.');
+    }
+
+    setTimeout(() => {
+        btn.disabled = false;
+        btn.textContent = '🔄 Reconstruir Histórico (Ler PDFs Antigos)';
+    }, 5000);
+}
+
+// ---------- Gestão Financeira ----------
+
+let dadosFinanceiros = { boletos: [], notas: [] };
+
+function trocarTab(tab, btn) {
+    document.querySelectorAll('.fin-tab').forEach(t => t.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById('wrap-boletos').style.display = tab === 'boletos' ? '' : 'none';
+    document.getElementById('wrap-notas').style.display   = tab === 'notas'   ? '' : 'none';
+}
+
+function renderBoletos(lista) {
+    const tbody = document.getElementById('tbody-boletos');
+    if (lista.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="5" class="fin-empty">Nenhum boleto registado.</td></tr>';
+        return;
+    }
+    tbody.innerHTML = lista.map(b =>
+        `<tr class="clicavel" onclick="window.open('/abrir-documento/${b.nf}','_blank')" data-search="${[b.beneficiario, b.valor, b.vencimento, b.nf, b.pagador].join(' ').toLowerCase()}">` +
+        `<td><span class="fin-tipo boleto">BOLETO</span></td>` +
+        `<td title="${b.pagador || ''}">${b.beneficiario || '-'}</td>` +
+        `<td class="fin-valor">R$ ${b.valor || '0,00'}</td>` +
+        `<td class="fin-venc">${b.vencimento || '-'}</td>` +
+        `<td>${b.nf || '-'}</td>` +
+        `</tr>`
+    ).join('');
+}
+
+function renderNotas(lista) {
+    const tbody = document.getElementById('tbody-notas');
+    if (lista.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="5" class="fin-empty">Nenhuma nota fiscal registada.</td></tr>';
+        return;
+    }
+    tbody.innerHTML = lista.map(n =>
+        `<tr class="clicavel" onclick="window.open('/abrir-documento/${n.numero}','_blank')" data-search="${[n.emitente, n.destinatario, n.valor, n.numero].join(' ').toLowerCase()}">` +
+        `<td><span class="fin-tipo nf">DANFE</span></td>` +
+        `<td>${n.emitente || '-'}</td>` +
+        `<td>${n.destinatario || '-'}</td>` +
+        `<td class="fin-valor">R$ ${n.valor || '0,00'}</td>` +
+        `<td>${n.numero || '-'}</td>` +
+        `</tr>`
+    ).join('');
+}
+
+async function buscarFinanceiro() {
+    try {
+        const res = await fetch('/api/financeiro');
+        dadosFinanceiros = await res.json();
+
+        document.getElementById('fin-total-boletos').textContent = (dadosFinanceiros.boletos || []).length;
+        document.getElementById('fin-total-notas').textContent = (dadosFinanceiros.notas || []).length;
+
+        renderBoletos(dadosFinanceiros.boletos || []);
+        renderNotas(dadosFinanceiros.notas || []);
+    } catch {
+        document.getElementById('tbody-boletos').innerHTML = '<tr><td colspan="5" class="fin-empty">Sem conexão.</td></tr>';
+        document.getElementById('tbody-notas').innerHTML = '<tr><td colspan="5" class="fin-empty">Sem conexão.</td></tr>';
+    }
+}
+
+document.getElementById('pesquisaFinanceiro').addEventListener('input', function() {
+    const termo = this.value.toLowerCase().trim();
+    document.querySelectorAll('#tbody-boletos tr, #tbody-notas tr').forEach(tr => {
+        if (!tr.dataset.search) return;
+        tr.classList.toggle('hidden', termo !== '' && !tr.dataset.search.includes(termo));
+    });
+});
+
+async function buscarStatusCelular() {
+    const badge = document.getElementById('badge-celular');
+    if (!badge) return;
+    try {
+        const res = await fetch('/api/status-celular');
+        const data = await res.json();
+        const mapa = {
+            conectado:    { cls: 'cel-conectado',    txt: '📱 Celular Conectado' },
+            iniciando:    { cls: 'cel-iniciando',    txt: '⏳ Conectando...' },
+            qr_code:      { cls: 'cel-qr',           txt: '📸 Aguardando Leitura de QR Code' },
+            desconectado: { cls: 'cel-desconectado', txt: '❌ Desconectado' },
+            desconhecido: { cls: 'cel-desconectado', txt: '❌ Desconectado' },
+        };
+        const estado = mapa[data.status] || mapa.desconhecido;
+        badge.className = estado.cls;
+        badge.textContent = estado.txt;
+
+        // Controla exibição do QR Code
+        const statusConectado = data.status === 'conectado';
+        atualizarQRCode(statusConectado);
+    } catch {
+        badge.className = 'cel-desconectado';
+        badge.textContent = '❌ Desconectado';
+        atualizarQRCode(false);
+    }
+}
+
+async function atualizarQRCode(conectado) {
+    const container = document.getElementById('qr-container');
+    const img = document.getElementById('wa-qrcode');
+    if (!container || !img) return;
+
+    if (conectado) {
+        // Esconde o QR ao conectar
+        container.classList.remove('visivel');
+        img.src = '';
+        return;
+    }
+
+    try {
+        const res = await fetch('/api/whatsapp/qr');
+        const data = await res.json();
+        if (data.qr) {
+            img.src = data.qr;
+            container.classList.add('visivel');
+        } else {
+            container.classList.remove('visivel');
+            img.src = '';
+        }
+    } catch {
+        container.classList.remove('visivel');
+    }
+}
+
+buscarStatus();
+buscarLogs();
+buscarContagem();
+buscarArquivos();
+buscarFinanceiro();
+buscarStatusCelular();
+
+setInterval(buscarStatus, 5000);
+setInterval(buscarLogs, 3000);
+setInterval(buscarContagem, 10000);
+setInterval(buscarArquivos, 10000);
+setInterval(buscarFinanceiro, 30000);
+setInterval(buscarStatusCelular, 3000);
+</script>
+<script>
+function executarLimpezaNuclear() {
+    const confirmacao = confirm("🔄 Reinicialização Segura do Bot\n\nIsso vai:\n1. Limpar os logs pesados do PM2\n2. Reiniciar o robô do WhatsApp de forma limpa\n\n✅ A sessão do WhatsApp é MANTIDA — não precisará ler o QR Code novamente.\n✅ Nenhum ficheiro de autenticação será apagado.\n\nDeseja continuar?");
+
+    if (confirmacao) {
+        alert("⏳ A reinicialização começou! Aguarde cerca de 5 a 10 segundos...");
+
+        fetch('/api/limpeza-nuclear', { method: 'POST' })
+            .then(res => res.json())
+            .then(data => {
+                alert(data.message);
+            })
+            .catch(err => {
+                alert("❌ Ocorreu um erro ao tentar reiniciar o bot.");
+            });
+    }
+}
+</script>
+</body>
+</html>

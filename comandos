@@ -1,0 +1,67 @@
+Aqui está o seu Guia de Bolso do PM2. Salve essa mensagem nos "Favoritos" do WhatsApp ou no Notas para ter sempre à mão! 📝
+
+📊 1. Ver se está tudo bem (Status)
+
+Use estes para saber se o bot está online ou travado.
+
+pm2 list
+
+O que faz: Mostra uma lista simples (Online/Offline) e há quanto tempo está ligado.
+
+pm2 monit
+
+O que faz: Abre aquele painel futurista que mostra memória, CPU e logs em tempo real. (Para sair: aperte Q ou Ctrl + C).
+
+pm2 show bot-alho
+
+O que faz: O "Raio-X". Mostra configurações avançadas, como o horário do reinício automático (cron) e onde estão os arquivos.
+
+🛠️ 2. Mexeu no código? (Controle)
+
+Sempre que você alterar o arquivo index.js, precisa avisar o PM2.
+
+pm2 restart bot-alho
+
+Quando usar: Sempre que você mudar uma linha de código. Ele desliga e liga rapidinho para pegar as novidades.
+
+pm2 stop bot-alho
+
+Quando usar: Se você quiser desligar o bot temporariamente (ex: manutenção).
+
+pm2 start bot-alho
+
+Quando usar: Para ligar de volta depois de ter dado stop.
+
+📝 3. O que ele está fazendo? (Logs)
+
+Use estes para ver o QR Code ou descobrir por que deu erro.
+
+pm2 logs
+
+O que faz: Mostra as últimas 15 linhas de conversa do bot. Ótimo para ver o QR Code.
+
+pm2 logs --lines 100
+
+O que faz: Mostra as últimas 100 linhas (bom para ver o histórico da madrugada).
+
+pm2 flush
+
+O que faz: Limpa todos os logs antigos para despoluir a tela.
+
+💾 4. Configuração de Sistema (Importante)
+
+Use estes se você mudar o nome do bot ou adicionar novos processos.
+
+pm2 save
+
+Quando usar: Sempre que você adicionar, remover ou alterar configurações (como limite de memória). Isso "tira uma foto" do estado atual para o Mac lembrar quando reiniciar.
+
+🚨 Resumo de Emergência
+
+Se tudo der errado ou parecer travado:
+
+pm2 restart bot-alho (Reinicia forçado).
+
+pm2 logs (Vê se ele reclamou de algo).
+
+pm2 monit (Vê se ele está comendo memória demais).

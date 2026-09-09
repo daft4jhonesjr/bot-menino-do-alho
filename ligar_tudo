@@ -1,0 +1,12 @@
+#!/bin/bash
+echo "🧄 Preparando a casa..."
+pm2 delete all
+echo "📱 Ligando o WhatsApp..."
+pm2 start index.js --name "bot-alho"
+echo "🌐 Ligando o Painel..."
+pm2 start painel.js --name "painel"
+echo "🐍 Ligando o Python..."
+pm2 start entregador.py --name "bot-site" --interpreter python3
+pm2 save
+echo "✅ Sistema do Menino do Alho 100% Online!"
+pm2 status
