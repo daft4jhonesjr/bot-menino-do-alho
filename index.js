@@ -130,7 +130,8 @@ async function processarPdfRecebido(msg, buffer, nomeOriginal) {
             fs.writeFileSync(caminhoArquivo, buffer);
 
             enviarParaNuvem(caminhoArquivo, nomeArquivo, 'DANFE').catch(err => {
-                console.log(`⚠️ Upload falhou silenciosamente: ${err.message}`);
+                console.error(`☁️ [Upload] ❌ Upload da DANFE falhou: ${err.message}`);
+                enviarTelegram(`⚠️ *Menino do Alho:* Falha ao enviar DANFE para o painel!\nArquivo: ${nomeArquivo}\nErro: ${err.message}`).catch(() => {});
             });
 
             guardarNota(dados);
@@ -176,7 +177,8 @@ async function processarPdfRecebido(msg, buffer, nomeOriginal) {
             fs.writeFileSync(caminhoArquivo, buffer);
 
             enviarParaNuvem(caminhoArquivo, nomeArquivo, 'BOLETO').catch(err => {
-                console.log(`⚠️ Upload falhou silenciosamente: ${err.message}`);
+                console.error(`☁️ [Upload] ❌ Upload do BOLETO falhou: ${err.message}`);
+                enviarTelegram(`⚠️ *Menino do Alho:* Falha ao enviar Boleto para o painel!\nArquivo: ${nomeArquivo}\nErro: ${err.message}`).catch(() => {});
             });
 
             guardarBoleto(dados);
@@ -410,36 +412,67 @@ iniciarBot().catch(err => {
 // 🧠 CÉREBRO: Funções Auxiliares
 // ========================================================
 
-// Função para enviar arquivo para a nuvem (Render)
+// ========================================================
+// ☁️ UPLOAD PARA NUVEM — Bot → Flask (Render)
+// ========================================================
+// Configuração centralizada: defina API_URL e API_BOT_TOKEN no .env (ou
+// nas variáveis de ambiente do Render) para não depender de valores hardcoded.
+const API_URL = process.env.API_URL || 'https://sistema-menino-do-alho.onrender.com';
+const API_BOT_TOKEN = process.env.API_BOT_TOKEN || 'ALHO_BOT_SUPER_SECRETO_2026_XYZ';
+
 async function enviarParaNuvem(caminhoArquivo, nomeArquivo, tipoDoc) {
+    const tipoEnvio = tipoDoc === 'DANFE' ? 'nfe' : 'boleto';
+    const endpointCompleto = `${API_URL}/api/bot/upload`;
+
+    console.log(`☁️ [Upload] Iniciando envio: ${nomeArquivo}`);
+    console.log(`☁️ [Upload] Tipo: ${tipoEnvio} | Endpoint: ${endpointCompleto}`);
+
     try {
         const formData = new FormData();
-        formData.append('file', fs.createReadStream(caminhoArquivo));
-        formData.append('tipo', tipoDoc === 'DANFE' ? 'nfe' : 'boleto');
+        // MIME type explícito garante que o Flask aceite o arquivo como PDF
+        formData.append('file', fs.createReadStream(caminhoArquivo), {
+            filename: nomeArquivo,
+            contentType: 'application/pdf',
+        });
+        formData.append('tipo', tipoEnvio);
         formData.append('nome', nomeArquivo);
 
-        const resposta = await axios.post('https://sistema-menino-do-alho.onrender.com/api/bot/upload', formData, {
+        const resposta = await axios.post(endpointCompleto, formData, {
             headers: {
                 ...formData.getHeaders(),
-                'X-API-KEY': 'ALHO_BOT_SUPER_SECRETO_2026_XYZ'
+                'X-API-KEY': API_BOT_TOKEN,
             },
-            timeout: 60000 // 60 segundos
+            timeout: 90000, // 90 segundos (Render pode demorar a acordar)
         });
 
-        if (resposta.status === 200 || resposta.status === 202) {
-            console.log('✅ Upload Sucesso');
+        console.log(`☁️ [Upload] ✅ Sucesso! Status HTTP: ${resposta.status}`);
+        console.log(`☁️ [Upload] Resposta do servidor: ${JSON.stringify(resposta.data)}`);
+
+        if (resposta.data && resposta.data.documento_id) {
+            console.log(`☁️ [Upload] Documento criado no banco com ID: ${resposta.data.documento_id}`);
         } else {
-            console.log(`⚠️ Upload retornou status: ${resposta.status}`);
+            console.warn(`☁️ [Upload] ⚠️ Servidor retornou 200 mas sem documento_id na resposta — verifique o banco de dados no Render!`);
         }
     } catch (erro) {
         if (erro.response) {
-            console.log(`❌ Erro no Upload (Servidor recusou): Status ${erro.response.status}`);
-            console.log(`Detalhes: ${JSON.stringify(erro.response.data)}`);
+            // Servidor respondeu com erro HTTP (4xx / 5xx)
+            console.error(`☁️ [Upload] ❌ FALHA — Servidor recusou. Status: ${erro.response.status}`);
+            console.error(`☁️ [Upload] Corpo da resposta: ${JSON.stringify(erro.response.data)}`);
+            if (erro.response.status === 403) {
+                console.error(`☁️ [Upload] 💡 Causa provável: API_BOT_TOKEN não configurado no Render ou token incorreto.`);
+            } else if (erro.response.status === 503) {
+                console.error(`☁️ [Upload] 💡 Causa provável: variável de ambiente API_BOT_TOKEN ausente no servidor.`);
+            } else if (erro.response.status === 400) {
+                console.error(`☁️ [Upload] 💡 Causa provável: arquivo inválido, MIME type rejeitado ou campo 'tipo' errado.`);
+            }
         } else if (erro.request) {
-            console.log('❌ Erro no Upload: Servidor offline ou não respondeu.');
+            console.error(`☁️ [Upload] ❌ FALHA — Servidor offline ou não respondeu (timeout).`);
+            console.error(`☁️ [Upload] URL tentada: ${endpointCompleto}`);
         } else {
-            console.log(`❌ Erro no Upload (Falha interna): ${erro.message}`);
+            console.error(`☁️ [Upload] ❌ FALHA — Erro interno: ${erro.message}`);
         }
+        // Re-lança o erro para o chamador poder registrar/notificar
+        throw erro;
     }
 }
 

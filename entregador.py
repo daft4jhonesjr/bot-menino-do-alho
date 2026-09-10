@@ -16,7 +16,18 @@ PASTAS_PARA_OLHAR = ['boletos', 'notas']
 # Onde guardar depois de enviar com sucesso
 PASTA_ENVIADOS = os.path.join(PASTA_RAIZ, "Enviados_para_Nuvem")
 
-# Dados do Site
+# ── URL base e token do servidor Flask ────────────────────────────────────────
+# IMPORTANTE: defina essas variáveis no ambiente (ex: .env ou Render Dashboard)
+# para não depender de valores hardcoded.
+API_URL       = os.environ.get("API_URL",        "https://sistema-menino-do-alho.onrender.com")
+API_BOT_TOKEN = os.environ.get("API_BOT_TOKEN",  "ALHO_BOT_SUPER_SECRETO_2026_XYZ")
+
+# Endpoint correto para o bot externo (autentica via X-API-KEY)
+ENDPOINT_UPLOAD = f"{API_URL}/api/bot/upload"
+
+print(f"🔧 [Entregador] API_URL: {API_URL}")
+print(f"🔧 [Entregador] Endpoint: {ENDPOINT_UPLOAD}")
+# ─────────────────────────────────────────────────────────────────────────────
 
 def enviar_arquivos():
     # Garante que a pasta de enviados existe
@@ -62,34 +73,59 @@ def enviar_arquivos():
                             # Determina o tipo baseado na pasta de origem
                             tipo_doc = 'nfe' if pasta == 'notas' else 'boleto'
                             
-                            # Prepara o FormData
+                            print(f"☁️ [Entregador] Enviando para: {ENDPOINT_UPLOAD}")
+                            print(f"☁️ [Entregador] Tipo: {tipo_doc} | Arquivo: {nome_arquivo}")
+
+                            # Prepara o FormData — MIME explícito para Flask aceitar
                             with open(caminho_arquivo, 'rb') as f:
                                 files = {'file': (nome_arquivo, f, 'application/pdf')}
                                 data = {'tipo': tipo_doc, 'nome': nome_arquivo}
-                                url = 'https://sistema-menino-do-alho.onrender.com/upload'
+                                # Autenticação via X-API-KEY (rota /api/bot/upload)
                                 headers = {
-                                    'Authorization': 'ALHO_BOT_SUPER_SECRETO_2026_XYZ',
-                                    'X-API-KEY': 'ALHO_BOT_SUPER_SECRETO_2026_XYZ'
+                                    'X-API-KEY': API_BOT_TOKEN,
                                 }
                                 
                                 # Envia para o servidor
                                 resposta = requests.post(
-                                    url,
+                                    ENDPOINT_UPLOAD,
                                     files=files, 
                                     data=data, 
                                     headers=headers, 
                                     verify=False, 
-                                    timeout=60
+                                    timeout=90  # 90s — Render pode demorar a acordar
                                 )
 
-                            # Verifica se o upload foi bem-sucedido (200 OK)
-                            if resposta.status_code == 200:
-                                print("✅ Upload bem-sucedido!")
+                            print(f"☁️ [Entregador] Status HTTP: {resposta.status_code}")
+                            print(f"☁️ [Entregador] Resposta: {resposta.text[:500]}")
+
+                            # Verifica se o upload foi bem-sucedido (200 ou 201)
+                            if resposta.status_code in (200, 201):
+                                try:
+                                    dados = resposta.json()
+                                    doc_id = dados.get('documento_id')
+                                    if doc_id:
+                                        print(f"✅ Upload bem-sucedido! Documento criado no banco com ID: {doc_id}")
+                                    else:
+                                        print(f"✅ Upload bem-sucedido! (servidor não retornou documento_id — verifique o banco)")
+                                except Exception:
+                                    print(f"✅ Upload bem-sucedido! (resposta não-JSON: {resposta.text[:200]})")
                                 
                                 # Move para a pasta de enviados apenas se deu sucesso
                                 destino = os.path.join(PASTA_ENVIADOS, nome_arquivo)
                                 shutil.move(caminho_arquivo, destino)
                                 print(f"📂 Arquivo movido para 'Enviados_para_Nuvem'")
+                            
+                            elif resposta.status_code == 403:
+                                print(f"❌ ERRO 403: Token inválido ou ausente.")
+                                print(f"💡 Verifique se API_BOT_TOKEN está configurado no Render com o valor correto.")
+                                print(f"💡 Token usado: {API_BOT_TOKEN[:8]}... | Endpoint: {ENDPOINT_UPLOAD}")
+                                print("⚠️ Arquivo não foi movido. Tentará novamente na próxima verificação.")
+
+                            elif resposta.status_code == 400:
+                                print(f"❌ ERRO 400: Requisição inválida.")
+                                print(f"📝 Resposta: {resposta.text}")
+                                print("💡 Verifique o tipo de arquivo e o campo 'tipo' (deve ser 'boleto' ou 'nfe').")
+                                print("⚠️ Arquivo não foi movido. Tentará novamente na próxima verificação.")
                             
                             else:
                                 print(f"❌ Erro no servidor. Status: {resposta.status_code}")
