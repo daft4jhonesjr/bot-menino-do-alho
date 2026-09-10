@@ -424,8 +424,24 @@ async function enviarParaNuvem(caminhoArquivo, nomeArquivo, tipoDoc) {
     const tipoEnvio = tipoDoc === 'DANFE' ? 'nfe' : 'boleto';
     const endpointCompleto = `${API_URL}/api/bot/upload`;
 
-    console.log(`☁️ [Upload] Iniciando envio: ${nomeArquivo}`);
-    console.log(`☁️ [Upload] Tipo: ${tipoEnvio} | Endpoint: ${endpointCompleto}`);
+    // ────────────────────────────────────────────────────────────────
+    // 🔍 PRÉ-DIAGNÓSTICO — imprime ANTES de qualquer chamada de rede
+    // Esses logs são a primeira coisa a checar no Railway/Render/PM2.
+    // ────────────────────────────────────────────────────────────────
+    console.log('='.repeat(60));
+    console.log(`☁️ [Upload] >>> INICIANDO ENVIO PARA O SERVIDOR <<<`);
+    console.log(`☁️ [Upload] Arquivo  : ${nomeArquivo}`);
+    console.log(`☁️ [Upload] Tipo     : ${tipoEnvio}`);
+    console.log(`☁️ [Upload] URL alvo : ${endpointCompleto}`);
+    console.log(`☁️ [Upload] Var API_URL      (env) : ${process.env.API_URL || '(não definida — usando fallback hardcoded)'}`);
+    console.log(`☁️ [Upload] Token configurado?     : ${!!process.env.API_BOT_TOKEN} ${process.env.API_BOT_TOKEN ? '(via env)' : '(usando fallback hardcoded)'}`);
+    console.log(`☁️ [Upload] Arquivo existe no disco: ${fs.existsSync(caminhoArquivo)}`);
+    if (fs.existsSync(caminhoArquivo)) {
+        const tamanho = fs.statSync(caminhoArquivo).size;
+        console.log(`☁️ [Upload] Tamanho do arquivo     : ${tamanho} bytes${tamanho === 0 ? ' ⚠️ ARQUIVO VAZIO!' : ''}`);
+    }
+    console.log('='.repeat(60));
+    // ────────────────────────────────────────────────────────────────
 
     try {
         const formData = new FormData();
@@ -437,6 +453,8 @@ async function enviarParaNuvem(caminhoArquivo, nomeArquivo, tipoDoc) {
         formData.append('tipo', tipoEnvio);
         formData.append('nome', nomeArquivo);
 
+        console.log(`☁️ [Upload] 🚀 Disparando requisição POST para: ${endpointCompleto}`);
+
         const resposta = await axios.post(endpointCompleto, formData, {
             headers: {
                 ...formData.getHeaders(),
@@ -445,33 +463,55 @@ async function enviarParaNuvem(caminhoArquivo, nomeArquivo, tipoDoc) {
             timeout: 90000, // 90 segundos (Render pode demorar a acordar)
         });
 
-        console.log(`☁️ [Upload] ✅ Sucesso! Status HTTP: ${resposta.status}`);
-        console.log(`☁️ [Upload] Resposta do servidor: ${JSON.stringify(resposta.data)}`);
+        console.log(`☁️ [Upload] ✅ Resposta recebida! Status HTTP: ${resposta.status}`);
+        console.log(`☁️ [Upload] Corpo da resposta: ${JSON.stringify(resposta.data)}`);
 
         if (resposta.data && resposta.data.documento_id) {
-            console.log(`☁️ [Upload] Documento criado no banco com ID: ${resposta.data.documento_id}`);
+            console.log(`☁️ [Upload] 🎉 Documento registrado no banco com ID: ${resposta.data.documento_id}`);
         } else {
-            console.warn(`☁️ [Upload] ⚠️ Servidor retornou 200 mas sem documento_id na resposta — verifique o banco de dados no Render!`);
+            console.warn(`☁️ [Upload] ⚠️ Status 200 recebido MAS sem documento_id — o registro pode NÃO ter sido salvo no banco!`);
         }
     } catch (erro) {
+        // ── Servidor respondeu com erro HTTP (4xx / 5xx) ────────────
         if (erro.response) {
-            // Servidor respondeu com erro HTTP (4xx / 5xx)
-            console.error(`☁️ [Upload] ❌ FALHA — Servidor recusou. Status: ${erro.response.status}`);
-            console.error(`☁️ [Upload] Corpo da resposta: ${JSON.stringify(erro.response.data)}`);
-            if (erro.response.status === 403) {
-                console.error(`☁️ [Upload] 💡 Causa provável: API_BOT_TOKEN não configurado no Render ou token incorreto.`);
-            } else if (erro.response.status === 503) {
-                console.error(`☁️ [Upload] 💡 Causa provável: variável de ambiente API_BOT_TOKEN ausente no servidor.`);
-            } else if (erro.response.status === 400) {
-                console.error(`☁️ [Upload] 💡 Causa provável: arquivo inválido, MIME type rejeitado ou campo 'tipo' errado.`);
-            }
+            console.error(`☁️ [Upload] ❌ FALHA HTTP — Servidor recusou com status: ${erro.response.status}`);
+            console.error(`☁️ [Upload] Corpo da resposta de erro: ${JSON.stringify(erro.response.data)}`);
+            const dicas = {
+                400: '💡 400 Bad Request — MIME type rejeitado, campo "tipo" inválido ou arquivo corrompido.',
+                403: '💡 403 Forbidden — API_BOT_TOKEN ausente ou incorreto no servidor (Render).',
+                404: '💡 404 Not Found — Endpoint /api/bot/upload não existe ou Blueprint não registrado.',
+                429: '💡 429 Too Many Requests — rate-limit atingido (10 req/min). Aguarde e tente novamente.',
+                500: '💡 500 Internal Server Error — exceção não tratada no Flask. Veja os logs do Gunicorn.',
+                503: '💡 503 Service Unavailable — API_BOT_TOKEN não configurado no ambiente do servidor.',
+            };
+            const dica = dicas[erro.response.status] || `💡 Erro ${erro.response.status} inesperado.`;
+            console.error(`☁️ [Upload] ${dica}`);
+
+        // ── Erro de rede (sem resposta do servidor) ──────────────────
         } else if (erro.request) {
-            console.error(`☁️ [Upload] ❌ FALHA — Servidor offline ou não respondeu (timeout).`);
-            console.error(`☁️ [Upload] URL tentada: ${endpointCompleto}`);
+            const codigo = erro.code || 'DESCONHECIDO';
+            console.error(`☁️ [Upload] ❌ FALHA DE REDE — Nenhuma resposta recebida do servidor.`);
+            console.error(`☁️ [Upload] URL tentada   : ${endpointCompleto}`);
+            console.error(`☁️ [Upload] Código do erro: ${codigo}`);
+
+            const dicasRede = {
+                ECONNREFUSED : '💡 ECONNREFUSED — Servidor recusou a conexão. Está rodando? Porta correta?',
+                ENOTFOUND    : '💡 ENOTFOUND — DNS falhou. Domínio não existe ou sem acesso à internet.',
+                ECONNRESET   : '💡 ECONNRESET — Conexão derrubada pelo servidor no meio da transferência.',
+                ETIMEDOUT    : '💡 ETIMEDOUT — Timeout de conexão. Servidor muito lento ou firewall bloqueando.',
+                ECONNABORTED : '💡 ECONNABORTED — axios cancelou por timeout (90s excedido). Arquivo muito grande?',
+                ERR_BAD_RESPONSE: '💡 ERR_BAD_RESPONSE — Resposta malformada do servidor (possível proxy ou 502).',
+            };
+            const dicaRede = dicasRede[codigo] || `💡 Erro de rede desconhecido (${codigo}). Verifique conectividade.`;
+            console.error(`☁️ [Upload] ${dicaRede}`);
+
+        // ── Erro interno do axios (antes de enviar) ──────────────────
         } else {
-            console.error(`☁️ [Upload] ❌ FALHA — Erro interno: ${erro.message}`);
+            console.error(`☁️ [Upload] ❌ FALHA INTERNA — Erro ao montar a requisição: ${erro.message}`);
+            if (erro.stack) console.error(`☁️ [Upload] Stack: ${erro.stack}`);
         }
-        // Re-lança o erro para o chamador poder registrar/notificar
+
+        // Re-lança para o .catch() do chamador poder notificar via Telegram
         throw erro;
     }
 }
