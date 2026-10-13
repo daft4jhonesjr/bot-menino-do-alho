@@ -2,7 +2,6 @@ const qrcode = require('qrcode-terminal');
 const QRCodeLib = require('qrcode');
 const pdf = require('pdf-parse');
 const fs = require('fs');
-const { exec } = require('child_process');
 const axios = require('axios');
 const FormData = require('form-data');
 const cron = require('node-cron');
@@ -183,7 +182,6 @@ async function processarPdfRecebido(msg, buffer, nomeOriginal) {
 
             guardarBoleto(dados);
             copiarParaIcloud(caminhoArquivo, nomeArquivo, 'BOLETO');
-            criarLembreteMac(dados.pagador, dados.beneficiario, dados.vencimento, dados.nf);
 
             const delayBoleto = Math.floor(Math.random() * 3000) + 3000;
             console.log(`⏳ Esperando ${delayBoleto}ms para parecer humano...`);
@@ -195,7 +193,7 @@ async function processarPdfRecebido(msg, buffer, nomeOriginal) {
                           `💵 *Valor:* R$ ${dados.valor}\n` +
                           `📅 *Vencimento:* ${dados.vencimento}\n` +
                           `📝 *NF Ref:* ${dados.nf}\n\n` +
-                          `📂 Original e cópia arquivados. Agendado no Mac.`);
+                          `📂 Original e cópia arquivados.`);
             }, delayBoleto);
         } else {
             console.log('⚠️ Documento não reconhecido como Boleto ou DANFE.');
@@ -415,10 +413,11 @@ iniciarBot().catch(err => {
 // ========================================================
 // ☁️ UPLOAD PARA NUVEM — Bot → Flask (Render)
 // ========================================================
-// Configuração centralizada: defina API_URL e API_BOT_TOKEN no .env (ou
-// nas variáveis de ambiente do Render) para não depender de valores hardcoded.
+// Configuração centralizada: defina API_URL, API_BOT_TOKEN e EMPRESA_ID no .env
+// (ou nas variáveis de ambiente) para não depender de valores hardcoded.
 const API_URL = process.env.API_URL || 'https://sistema-menino-do-alho.onrender.com';
 const API_BOT_TOKEN = process.env.API_BOT_TOKEN || 'ALHO_BOT_SUPER_SECRETO_2026_XYZ';
+const EMPRESA_ID = process.env.EMPRESA_ID || 1;
 
 async function enviarParaNuvem(caminhoArquivo, nomeArquivo, tipoDoc) {
     const tipoEnvio = tipoDoc === 'DANFE' ? 'nfe' : 'boleto';
@@ -435,6 +434,7 @@ async function enviarParaNuvem(caminhoArquivo, nomeArquivo, tipoDoc) {
     console.log(`☁️ [Upload] URL alvo : ${endpointCompleto}`);
     console.log(`☁️ [Upload] Var API_URL      (env) : ${process.env.API_URL || '(não definida — usando fallback hardcoded)'}`);
     console.log(`☁️ [Upload] Token configurado?     : ${!!process.env.API_BOT_TOKEN} ${process.env.API_BOT_TOKEN ? '(via env)' : '(usando fallback hardcoded)'}`);
+    console.log(`☁️ [Upload] Empresa ID             : ${EMPRESA_ID} ${process.env.EMPRESA_ID ? '(via env)' : '(usando fallback 1)'}`);
     console.log(`☁️ [Upload] Arquivo existe no disco: ${fs.existsSync(caminhoArquivo)}`);
     if (fs.existsSync(caminhoArquivo)) {
         const tamanho = fs.statSync(caminhoArquivo).size;
@@ -452,10 +452,11 @@ async function enviarParaNuvem(caminhoArquivo, nomeArquivo, tipoDoc) {
         });
         formData.append('tipo', tipoEnvio);
         formData.append('nome', nomeArquivo);
+        formData.append('empresa_id', EMPRESA_ID);
 
         console.log(`☁️ [Upload] 🚀 Disparando requisição POST para: ${endpointCompleto}`);
 
-        const resposta = await axios.post(endpointCompleto, formData, {
+        const response = await axios.post(endpointCompleto, formData, {
             headers: {
                 ...formData.getHeaders(),
                 'X-API-KEY': API_BOT_TOKEN,
@@ -463,19 +464,23 @@ async function enviarParaNuvem(caminhoArquivo, nomeArquivo, tipoDoc) {
             timeout: 90000, // 90 segundos (Render pode demorar a acordar)
         });
 
-        console.log(`☁️ [Upload] ✅ Resposta recebida! Status HTTP: ${resposta.status}`);
-        console.log(`☁️ [Upload] Corpo da resposta: ${JSON.stringify(resposta.data)}`);
+        const documentoId = response.data?.documento_id;
+        const empresaId = response.data?.empresa_id;
 
-        if (resposta.data && resposta.data.documento_id) {
-            console.log(`☁️ [Upload] 🎉 Documento registrado no banco com ID: ${resposta.data.documento_id}`);
+        console.log(`☁️ [Upload] ✅ Resposta recebida! Status HTTP: ${response.status}`);
+        console.log(`☁️ [Upload] Corpo da resposta: ${JSON.stringify(response.data)}`);
+        console.log(`[BOT] Upload OK | Status: ${response.status} | Doc ID: ${documentoId} | Empresa ID: ${empresaId}`);
+
+        if (documentoId) {
+            console.log(`☁️ [Upload] 🎉 Documento registrado no banco com ID: ${documentoId} | Empresa ID: ${empresaId}`);
         } else {
             console.warn(`☁️ [Upload] ⚠️ Status 200 recebido MAS sem documento_id — o registro pode NÃO ter sido salvo no banco!`);
         }
-    } catch (erro) {
-        // ── Servidor respondeu com erro HTTP (4xx / 5xx) ────────────
-        if (erro.response) {
-            console.error(`☁️ [Upload] ❌ FALHA HTTP — Servidor recusou com status: ${erro.response.status}`);
-            console.error(`☁️ [Upload] Corpo da resposta de erro: ${JSON.stringify(erro.response.data)}`);
+    } catch (error) {
+        // Captura códigos HTTP reais (400, 403, 503, etc.) quando o servidor respondeu
+        if (error.response) {
+            console.error(`☁️ [Upload] ❌ FALHA HTTP — status: ${error.response.status}`);
+            console.error(`☁️ [Upload] ❌ Resposta do servidor: ${JSON.stringify(error.response.data)}`);
             const dicas = {
                 400: '💡 400 Bad Request — MIME type rejeitado, campo "tipo" inválido ou arquivo corrompido.',
                 403: '💡 403 Forbidden — API_BOT_TOKEN ausente ou incorreto no servidor (Render).',
@@ -484,12 +489,12 @@ async function enviarParaNuvem(caminhoArquivo, nomeArquivo, tipoDoc) {
                 500: '💡 500 Internal Server Error — exceção não tratada no Flask. Veja os logs do Gunicorn.',
                 503: '💡 503 Service Unavailable — API_BOT_TOKEN não configurado no ambiente do servidor.',
             };
-            const dica = dicas[erro.response.status] || `💡 Erro ${erro.response.status} inesperado.`;
+            const dica = dicas[error.response.status] || `💡 Erro ${error.response.status} inesperado.`;
             console.error(`☁️ [Upload] ${dica}`);
 
         // ── Erro de rede (sem resposta do servidor) ──────────────────
-        } else if (erro.request) {
-            const codigo = erro.code || 'DESCONHECIDO';
+        } else if (error.request) {
+            const codigo = error.code || 'DESCONHECIDO';
             console.error(`☁️ [Upload] ❌ FALHA DE REDE — Nenhuma resposta recebida do servidor.`);
             console.error(`☁️ [Upload] URL tentada   : ${endpointCompleto}`);
             console.error(`☁️ [Upload] Código do erro: ${codigo}`);
@@ -507,12 +512,12 @@ async function enviarParaNuvem(caminhoArquivo, nomeArquivo, tipoDoc) {
 
         // ── Erro interno do axios (antes de enviar) ──────────────────
         } else {
-            console.error(`☁️ [Upload] ❌ FALHA INTERNA — Erro ao montar a requisição: ${erro.message}`);
-            if (erro.stack) console.error(`☁️ [Upload] Stack: ${erro.stack}`);
+            console.error(`☁️ [Upload] ❌ FALHA INTERNA — Erro ao montar a requisição: ${error.message}`);
+            if (error.stack) console.error(`☁️ [Upload] Stack: ${error.stack}`);
         }
 
         // Re-lança para o .catch() do chamador poder notificar via Telegram
-        throw erro;
+        throw error;
     }
 }
 
@@ -851,71 +856,6 @@ async function extrairDadosBoleto(text) {
     }
 
     return { pagador, beneficiario, vencimento, valor, nf };
-}
-
-// ========================================================
-// 🍎 MAC OS: Automação de Lembretes (Corrigido)
-// ========================================================
-function criarLembreteMac(pagador, beneficiario, vencimento, nf) {
-    if (!vencimento || !vencimento.includes('/')) return;
-    const [dia, mes, ano] = vencimento.split('/');
-    const nomeTitulo = (beneficiario && beneficiario !== "Não identificado") ? beneficiario : "Boleto";
-    const titulo = `Pagar: ${nomeTitulo} - NF ${nf}`;
-    const corpo = `Pagador Original: ${pagador}\nBoleto recebido via WhatsApp.`;
-
-    // Escapa aspas no título e corpo para o AppleScript
-    const tituloEscapado = titulo.replace(/"/g, '\\"');
-    const corpoEscapado = corpo.replace(/"/g, '\\"');
-
-    // Verifica se já existe um lembrete com o mesmo título
-    const scriptVerificacao = `
-        tell application "Reminders"
-            if exists list "Contas" then
-                set listaAlvo to list "Contas"
-                set existeLembrete to exists (reminders of listaAlvo whose name is "${tituloEscapado}")
-                return existeLembrete
-            else
-                return false
-            end if
-        end tell
-    `;
-
-    // Primeiro verifica se já existe
-    exec(`osascript -e '${scriptVerificacao}'`, (error, stdout, stderr) => {
-        if (error) {
-            console.error(`❌ Erro ao verificar lembrete: ${stderr}`);
-            return;
-        }
-
-        // Se stdout contém "true", o lembrete já existe
-        const jaExiste = stdout.trim().toLowerCase() === 'true';
-        
-        if (jaExiste) {
-            console.log('⚠️ Lembrete duplicado, ignorando.');
-            return;
-        }
-
-        // Se não existe, cria o lembrete
-        const appleScript = `
-            tell application "Reminders"
-                if not (exists list "Contas") then
-                    make new list with properties {name:"Contas"}
-                end if
-                set listaAlvo to list "Contas"
-                set novaData to current date
-                set day of novaData to ${dia}
-                set month of novaData to ${mes}
-                set year of novaData to ${ano}
-                set time of novaData to 32400 
-                make new reminder at end of listaAlvo with properties {name:"${tituloEscapado}", body:"${corpoEscapado}", due date:novaData}
-            end tell
-        `;
-
-        exec(`osascript -e '${appleScript}'`, (error, stdout, stderr) => {
-            if (error) console.error(`❌ Erro Lembrete: ${stderr}`);
-            else console.log(`🍎 Lembrete criado.`);
-        });
-    });
 }
 
 // ========================================================

@@ -1,14 +1,13 @@
 # Bot de Boletos WhatsApp
 
-Bot Node.js que monitora seu WhatsApp, detecta boletos PDF recebidos, extrai informações e cria lembretes automaticamente no app Lembretes do macOS.
+Bot Node.js que monitora seu WhatsApp, detecta boletos PDF recebidos, extrai informações e envia avisos (WhatsApp/Telegram).
 
 ## Funcionalidades
 
 - ✅ Monitora mensagens recebidas no WhatsApp 24/7
 - 📄 Detecta automaticamente arquivos PDF (boletos)
 - 🔍 Extrai dados do boleto: Pagador, Vencimento e NF
-- 📱 Cria lembretes no app Lembretes do macOS com data de vencimento
-- 🔔 Envia notificações do sistema macOS
+- ☁️ Faz backup local/JSON e envio para a nuvem
 - 💬 Responde no WhatsApp confirmando o processamento
 
 ## Instalação
@@ -76,14 +75,11 @@ launchctl load ~/Library/LaunchAgents/com.botboletos.plist
 - `whatsapp-web.js` - Cliente WhatsApp Web
 - `qrcode-terminal` - Exibe QR Code no terminal
 - `pdf-parse` - Extrai texto de PDFs
-- `child_process` - Executa comandos AppleScript (nativo do Node.js)
 
 ## Permissões Necessárias
 
 O bot precisa de permissão para:
 - Acessar o WhatsApp Web
-- Criar lembretes no app Lembretes (primeira vez pode pedir permissão)
-- Enviar notificações do sistema (primeira vez pode pedir permissão)
 
 ## Estrutura de Dados Extraídos
 
@@ -96,7 +92,5 @@ O bot extrai automaticamente:
 
 O bot continua funcionando mesmo se:
 - Não conseguir extrair todos os dados do PDF
-- Houver erro ao criar lembrete
-- Houver erro ao enviar notificação
 
 Todos os erros são logados no console para debug.

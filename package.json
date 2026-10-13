@@ -1,7 +1,7 @@
 {
   "name": "bot-boletos",
   "version": "1.0.0",
-  "description": "Bot para monitorar WhatsApp, processar boletos PDF e criar lembretes no macOS",
+  "description": "Bot para monitorar WhatsApp, processar boletos PDF e enviar avisos",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -11,8 +11,7 @@
   "keywords": [
     "whatsapp",
     "boleto",
-    "pdf",
-    "reminders"
+    "pdf"
   ],
   "author": "",
   "license": "ISC",
