@@ -531,6 +531,16 @@ function identificarTipoDocumento(text) {
     if (text.match(/DANFE|Nota Fiscal Eletrônica|Chave de acesso/i)) {
         return 'DANFE';
     }
+    // ── Checagem adicional: emitentes/assinaturas conhecidas que geram DANFEs ──────────────
+    // L A DE ASSIS MARITIMO DOS SANTOS SACOLAS: pode vir sem o termo "DANFE" explícito no
+    // texto extraído pelo pdf-parse dependendo do layout da impressão.
+    if (
+        text.includes('54.502.793/0001-76') ||
+        text.toUpperCase().includes('L A DE ASSIS') ||
+        (text.match(/NFe\s*N[ºo°]/i) && text.match(/Chave\s*de\s*Acesso/i))
+    ) {
+        return 'DANFE';
+    }
     // Verifica palavras comuns de boleto
     if (text.match(/Boleto|Pagador|Beneficiário|Nosso Número|Linha Digitável|341-7|237-2/i)) {
         return 'BOLETO';
@@ -538,11 +548,93 @@ function identificarTipoDocumento(text) {
     return 'DESCONHECIDO';
 }
 
+// ============================================================
+// 🛍️  EXTRATOR ISOLADO — L A DE ASSIS SACOLAS (NF-e layout)
+// ============================================================
+function extrairDanfeAssisSacolas(text) {
+    console.log('[Triagem] >>> Extrator isolado L A DE ASSIS SACOLAS ativado <<<');
+
+    // 1. Número da NF — captura sequência de dígitos (ex: 0000000213) e remove zeros à esquerda
+    let numero = 'SN';
+    const matchNum = text.match(/N[ºo°][\s\.\:\-]*(\d{7,10})/i)
+        || text.match(/N[ºo°]\s*(\d+)/i);
+    if (matchNum) {
+        numero = parseInt(matchNum[1], 10).toString(); // remove zeros à esquerda
+    }
+
+    // 2. Emitente — fixo pela assinatura CNPJ/nome
+    const emitente = 'L A DE ASSIS MARITIMO DOS SANTOS SACOLAS LTDA';
+
+    // 3. Destinatário — procura nome associado ao CNPJ 00.889.627/0001-45
+    let destinatario = 'Não identificado';
+    if (text.includes('00.889.627/0001-45') || text.toUpperCase().includes('BONTEMPO')) {
+        destinatario = 'Bontempo Supermercado LTDA';
+    } else {
+        // Tentativa genérica: linha após DESTINATÁRIO/REMETENTE que contenha texto real
+        const secMatch = text.match(
+            /DESTINAT[AÁ]RIO\s*\/\s*REMETENTE([\s\S]{1,800}?)(?:C[AÁ]LCULO\s*DO\s*IMPOSTO|TRANSPORTADOR|DADOS\s*DO\s*PRODUTO)/i
+        );
+        if (secMatch) {
+            const secao = secMatch[1];
+            const matchNome = secao.match(/NOME\s*[\/|]\s*RAZ[ÃA]O\s*SOCIAL[\r\n]+([^\r\n]+)/i);
+            if (matchNome) {
+                let cand = matchNome[1].trim().replace(/^[\.\-\s\|]+|[\.\-\s\|]+$/g, '').replace(/\s{2,}/g, ' ');
+                const mCNPJ = cand.match(/(\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2})/);
+                if (mCNPJ) cand = cand.split(mCNPJ[0])[0].trim();
+                if (cand.length > 3 && /[A-Za-zÀ-ú]{3,}/.test(cand)) destinatario = cand;
+            }
+        }
+    }
+
+    // 4. Valor Total — busca no quadro CÁLCULO DO IMPOSTO / VALOR TOTAL DA NOTA
+    let valor = '0,00';
+    const matchValorCalc = text.match(/VALOR\s*TOTAL\s*DA\s*NOTA[\s\S]{1,60}?([1-9]\d{0,2}(?:\.\d{3})*,\d{2})/i);
+    const matchValorTransp = text.match(/([1-9]\d{0,2}(?:\.\d{3})*,\d{2})[\s\r\n]*(?:0,00[\s\r\n]*)*TRANSPORTADOR/i);
+    const matchValor5zeros = text.match(/(?:0,00){5}([1-9]\d{0,2}(?:\.\d{3})*,\d{2})/);
+    if (matchValorCalc) {
+        valor = matchValorCalc[1];
+    } else if (matchValorTransp) {
+        valor = matchValorTransp[1];
+    } else if (matchValor5zeros) {
+        valor = matchValor5zeros[1];
+    } else {
+        // Fallback: maior valor monetário no documento
+        const todos = text.match(/([1-9]\d{0,2}(?:\.\d{3})*,\d{2})/g);
+        if (todos && todos.length) {
+            valor = todos.reduce((m, v) => {
+                const parse = (s) => parseFloat(s.replace(/\./g, '').replace(',', '.'));
+                return parse(v) > parse(m) ? v : m;
+            });
+        }
+    }
+
+    // 5. Chave de Acesso — 44 dígitos (com ou sem espaços de formatação)
+    let chaveAcesso = '';
+    const matchChave = text.match(/(\d[\d\s]{40,60}\d)/);
+    if (matchChave) {
+        chaveAcesso = matchChave[1].replace(/\s+/g, '');
+        if (chaveAcesso.length !== 44) chaveAcesso = chaveAcesso.substring(0, 44);
+    }
+
+    console.log(`[Triagem] DANFE L A DE ASSIS detectada com sucesso | NF: ${numero} | Valor: ${valor}${chaveAcesso ? ' | Chave: ' + chaveAcesso : ''}`);
+
+    return { numero, valor, emitente, destinatario };
+}
+
 // --- EXTRAÇÃO DE NOTA FISCAL (DANFE) - VERSÃO V5 (ALCANCE LONGO) ---
 function extrairDadosNF(text) {
     console.log("=== TEXTO BRUTO DO PDF (DANFE) ===");
     console.log(text);
     console.log("==================================");
+
+    // ── ROTEAMENTO SEGURO: emitentes com extrator isolado ───────────────────────
+    // Qualquer emitente listado aqui é desviado para sua função dedicada.
+    // Nenhuma lógica existente (PATY, DESTAK, MF, etc.) é tocada.
+    if (text.includes('54.502.793/0001-76') || text.toUpperCase().includes('L A DE ASSIS')) {
+        return extrairDanfeAssisSacolas(text);
+    }
+    // ────────────────────────────────────────────────────────────────────────────
+
     const lines = text.split(/\r\n|\n|\r/);
     let numero = 'SN';
     let valor = '0,00';
