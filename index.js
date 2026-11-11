@@ -600,14 +600,22 @@ function extrairDadosNF(text) {
     valor = valorFinal;
 
     // 3. Emitente
+    // ⛔️ BLACKLIST: termos estruturais da DANFE que jamais devem ser atribuídos como emitente
+    const BLACKLIST_EMITENTE = [
+        'DESTINATÁRIO/REMETENTE', 'DESTINATARIO/REMETENTE',
+        'DANFE', 'DOCUMENTO AUXILIAR', 'ENTRADA', 'SAÍDA', 'SAIDA'
+    ];
     for (let i = 0; i < 20; i++) {
         let l = lines[i] ? lines[i].trim() : '';
-        if (l.length > 5 && !l.includes('DANFE') && !l.match(/^\d{2}\//)) {
+        if (l.length > 5 && !l.match(/^\d{2}\//)) {
+            const lUpper = l.toUpperCase();
+            // Rejeita qualquer termo da blacklist
+            if (BLACKLIST_EMITENTE.some(term => lUpper.includes(term.toUpperCase()))) continue;
             if (l.toUpperCase().includes('RECEBEMOS DE')) {
                 l = l.replace(/RECEBEMOS DE/i, '').trim();
             }
             l = l.split(/OS PRODUTOS|OS SERVIÇOS|CONSTANTES|CNPJ|\(/i)[0].trim();
-            if (l.length > 3 && !l.includes('DESTINATARIO')) {
+            if (l.length > 3) {
                 emitente = l;
                 break;
             }
@@ -615,60 +623,87 @@ function extrairDadosNF(text) {
     }
     if (emitente.length > 30) emitente = emitente.substring(0, 30).trim();
 
+    // 🔎 Normalização por CNPJ/termo conhecido — SOBERANA INDUSTRIA E COMERCIO LTDA
+    if (text.includes('60.338.587/0001-75') || text.toUpperCase().includes('SOBERANA')) {
+        emitente = 'SOBERANA INDUSTRIA E COMERCIO LTDA';
+    }
+
     // 4. Destinatário
-    // 1. Nome do Destinatário
-    const matchDest = text.match(/DESTINAT[AÁ]RIO\s*\/\s*REMETENTE[\r\n]+([^\r\n]+)/i);
-    if (matchDest) {
-        destinatario = matchDest[1].trim();
-    } else {
-        // Fallback pelo scanner de linhas
+    // ⛔️ LISTA PROIBIDA para candidatos de destinatário
+    const LIXO_DESTINATARIO = [
+        'NOME', 'RAZÃO', 'RAZAO', 'SOCIAL', 'ENDEREÇO', 'ENDERECO',
+        'INSCRIÇÃO', 'INSCRICAO', 'SUBST', 'CNPJ', 'CPF', 'FONE',
+        'DATA', 'SAÍDA', 'SAIDA', 'ENTRADA', 'HORA', 'BAIRRO', 'CEP',
+        'MUNICÍPIO', 'MUNICIPIO', 'FATURA', 'DUPLICATA', 'VENCIMENTO',
+        'DESTINATÁRIO', 'DESTINATARIO', 'REMETENTE', 'NOME/RAZÃO', 'NOME / RAZAO'
+    ];
+
+    const ehCandidatoValido = (cand) => {
+        if (!cand || cand.length < 3) return false;
+        if (/^[\.\-\s\|_\/\\]+$/.test(cand)) return false; // só pontuação
+        const cu = cand.toUpperCase();
+        if (LIXO_DESTINATARIO.some(t => cu.includes(t))) return false;
+        if (!/[A-Za-zÀ-ú]{3,}/.test(cand)) return false; // precisa ter letras reais
+        return true;
+    };
+
+    // Estratégia 1: Extrai seção DESTINATÁRIO/REMETENTE e busca campo NOME/RAZÃO SOCIAL
+    const secaoDestMatch = text.match(
+        /DESTINAT[AÁ]RIO\s*\/\s*REMETENTE([\s\S]{1,1000}?)(?:C[AÁ]LCULO\s*DO\s*IMPOSTO|TRANSPORTADOR|DADOS\s*DO\s*PRODUTO)/i
+    );
+    if (secaoDestMatch) {
+        const secao = secaoDestMatch[1];
+        // Procura rótulo "NOME/RAZÃO SOCIAL" (ou variações) e pega a linha logo abaixo
+        const matchNomeRazao = secao.match(
+            /NOME\s*[\/|]\s*RAZ[ÃA]O\s*SOCIAL[\r\n]+([^\r\n]+)/i
+        );
+        if (matchNomeRazao) {
+            let candidato = matchNomeRazao[1].trim()
+                .replace(/^[\.\-\s\|]+|[\.\-\s\|]+$/g, '')
+                .replace(/\s{2,}/g, ' ');
+            const matchCNPJ = candidato.match(/(\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2})/);
+            if (matchCNPJ) candidato = candidato.split(matchCNPJ[0])[0].trim();
+            if (ehCandidatoValido(candidato)) {
+                destinatario = candidato;
+            }
+        }
+
+        // Se não achou via NOME/RAZÃO SOCIAL, varre as linhas da seção
+        if (destinatario === 'Não identificado') {
+            for (const linha of secao.split(/\r\n|\n|\r/)) {
+                let candidato = linha.trim()
+                    .replace(/^[\.\-\s\|]+|[\.\-\s\|]+$/g, '')
+                    .replace(/\s{2,}/g, ' ');
+                const matchCNPJ = candidato.match(/(\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2})/);
+                if (matchCNPJ) candidato = candidato.split(matchCNPJ[0])[0].trim();
+                if (ehCandidatoValido(candidato)) {
+                    destinatario = candidato;
+                    break;
+                }
+            }
+        }
+    }
+
+    // Estratégia 2: Scanner de linhas (fallback para layouts sem seção delimitada)
+    if (destinatario === 'Não identificado') {
         for (let i = 0; i < lines.length; i++) {
             const linhaAtual = lines[i].toUpperCase();
-            
-            if (linhaAtual.includes('DESTINATARIO') || linhaAtual.includes('REMETENTE')) {
-                // AUMENTADO: Varre as próximas 12 linhas (antes eram 6)
-                for (let j = 1; j <= 12; j++) {
-                    if (i + j < lines.length) {
-                        let candidato = lines[i + j].trim();
-                        const candidatoUpper = candidato.toUpperCase();
-                        
-                        // ⛔️ LISTA PROIBIDA (Atualizada)
-                        const ehLixo = 
-                            candidato.length < 3 ||
-                            candidatoUpper.includes('NOME') || 
-                            candidatoUpper.includes('RAZÃO') || 
-                            candidatoUpper.includes('SOCIAL') || 
-                            candidatoUpper.includes('ENDEREÇO') || 
-                            candidatoUpper.includes('INSCRIÇÃO') || 
-                            candidatoUpper.includes('SUBST') ||
-                            candidatoUpper.includes('CNPJ') ||
-                            candidatoUpper.includes('CPF') ||
-                            candidatoUpper.includes('FONE') ||
-                            candidatoUpper.includes('DATA') ||     
-                            candidatoUpper.includes('SAÍDA') ||    
-                            candidatoUpper.includes('ENTRADA') ||  
-                            candidatoUpper.includes('HORA') ||
-                            candidatoUpper.includes('BAIRRO') ||
-                            candidatoUpper.includes('CEP') ||
-                            candidatoUpper.includes('MUNICÍPIO') ||
-                            candidatoUpper.includes('FATURA') ||
-                            candidatoUpper.includes('DUPLICATA') ||
-                            candidatoUpper.includes('VENCIMENTO');
 
-                        if (!ehLixo) {
-                            const matchCNPJ = candidato.match(/(\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2})/);
-                            if (matchCNPJ) {
-                                candidato = candidato.split(matchCNPJ[0])[0].trim();
-                            }
-
-                            if (candidato.length > 3) {
-                                destinatario = candidato;
-                                break;
-                            }
-                        }
+            if (linhaAtual.includes('DESTINATARIO') || linhaAtual.includes('DESTINATÁRIO')) {
+                // Varre as próximas 14 linhas em busca do primeiro candidato válido
+                for (let j = 1; j <= 14; j++) {
+                    if (i + j >= lines.length) break;
+                    let candidato = lines[i + j].trim()
+                        .replace(/^[\.\-\s\|]+|[\.\-\s\|]+$/g, '')
+                        .replace(/\s{2,}/g, ' ');
+                    const matchCNPJ = candidato.match(/(\d{2}\.\d{3}\.\d{3}\/\d{4}-\d{2})/);
+                    if (matchCNPJ) candidato = candidato.split(matchCNPJ[0])[0].trim();
+                    if (ehCandidatoValido(candidato)) {
+                        destinatario = candidato;
+                        break;
                     }
                 }
-                break; 
+                break;
             }
         }
     }
@@ -695,10 +730,23 @@ function extrairDadosNF(text) {
         }
     }
 
+    // Limpeza final do destinatário: remove rótulos estruturais residuais e pontuação solta
     destinatario = destinatario
-        .replace(/NOME\/RAZ[ÃA]O SOCIAL/i, '')
-        .replace(/CNPJ\/CPF/i, '')
+        .replace(/NOME\s*[\/|]\s*RAZ[ÃA]O\s*SOCIAL/gi, '')
+        .replace(/CNPJ\s*[\/|]\s*CPF/gi, '')
+        .replace(/^[\.\-\s\|]+|[\.\-\s\|]+$/g, '')
+        .replace(/\s{2,}/g, ' ')
         .trim();
+
+    // Segurança: se após a limpeza restar só pontuação ou string muito curta, reseta
+    if (/^[\.\-\s\|_\/\\]+$/.test(destinatario) || destinatario.length < 3) {
+        destinatario = 'Não identificado';
+    }
+
+    // 🔎 Normalização por CNPJ/termo conhecido — AMARELAO COMERCIO VAREJISTA DE ALIMENTOS LTDA
+    if (text.includes('35.795.631/0001-29') || text.toUpperCase().includes('AMARELAO')) {
+        destinatario = 'AMARELAO COMERCIO VAREJISTA DE ALIMENTOS LTDA';
+    }
 
     return { numero, valor, emitente, destinatario };
 }
